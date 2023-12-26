@@ -1,0 +1,9 @@
+.videoBox {
+    margin-top: 50px;
+    width: 90%;
+    height: 80vh;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.8) 50%, rgba(255, 213, 0, 0.5));
+    box-shadow:
+            -4px 0 18px rgb(0, 0, 0),
+            4px 0 18px rgba(255, 213, 0, 0.9);
+}

@@ -1,0 +1,8 @@
+.MainPageBox{
+    background-image: url("/public/19449872 – копія.jpg");
+    background-size: 100% auto;
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
