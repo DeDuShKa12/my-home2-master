@@ -24,7 +24,7 @@
 }
 
 .logoHeader img{
-    width: 65%;
+    width: 60%;
     height: 99%;
 }
 
@@ -51,7 +51,7 @@
     width: 30%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -59,8 +59,25 @@
 .compInfo span {
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 26px;
+    font-size: 27px;
+    line-height: 28px;
     color: #020202;
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1920px) {
+    .compInfo span {
+        font-size: 20px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .compInfo span {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .mainBoxHeader {
+        height: 9%;
+    }
 }
