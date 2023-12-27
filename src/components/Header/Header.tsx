@@ -7,19 +7,25 @@ import {faSquareXTwitter} from "@fortawesome/free-brands-svg-icons/faSquareXTwit
 const Header: FC = () => {
     return (
         <div className='mainBoxHeader'>
-            <div>Logo Name</div>
+            <div className="logoHeader">
+                <img src="/logo.png" alt="Not House Recovery"/>
+            </div>
             <div className='buttonBoxInHeader'>
                 <button type="button" className="myBtnInHeader btn btn-warning">
-                    <FontAwesomeIcon icon={faSquareInstagram} size="xl" style={{color: "#df0712",}}/>
+                    <FontAwesomeIcon icon={faSquareInstagram} size="2xl" style={{color: "#df0712",}}/>
                 </button>
                 <button type="button" className="myBtnInHeader btn btn-primary">
-                    <FontAwesomeIcon icon={faFacebookF}/>
+                    <FontAwesomeIcon icon={faFacebookF} size="2xl"/>
                 </button>
                 <button type="button" className="myBtnInHeader btn btn-dark">
-                    <FontAwesomeIcon icon={faSquareXTwitter} style={{color: "#648bce",}} size="xl"/>
+                    <FontAwesomeIcon icon={faSquareXTwitter} style={{color: "#648bce",}} size="2xl"/>
                 </button>
             </div>
-            <div>Tel</div>
+            <div className="compInfo">
+                <span>Webuyanyhousesforcash@gmail.com</span>
+                <br/>
+                <span>+380 96 2322 323</span>
+            </div>
         </div>
     );
 };

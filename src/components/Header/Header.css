@@ -1,39 +1,66 @@
 .mainBoxHeader {
     box-sizing: border-box;
-    background-image: url("/public/19449872 – копія.jpg");
-    background-size: 100% auto;
+    background-image: url("/public/Header.png");
+    background-size: 100%;
     color: #020202;
-    font-size: 25px;
     width: 100%;
-    height: 70px;
-    transform: perspective(1000px);
+    height: 7%;
     box-shadow:
             -4px 0 18px rgb(0, 0, 0),
             4px 0 18px rgba(255, 213, 0, 0.9);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 50px 0 50px;
-    border: 1px solid #212121;
     position: fixed;
     z-index: 10;
 }
+
+.logoHeader {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoHeader img{
+    width: 65%;
+    height: 99%;
+}
+
 .myBtnInHeader {
     box-sizing: border-box;
-    width: 25%;
+    width: 30%;
     height: 100%;
     border: 2px solid rgba(246, 246, 246, 0.6);
-    border-radius: 20%;
-    box-shadow: 0 0 8px rgba(255, 213, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(255, 213, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .buttonBoxInHeader {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 15%;
     height: 60%;
-    margin-right: 95px;
+}
+
+.compInfo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.compInfo span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    color: #020202;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
