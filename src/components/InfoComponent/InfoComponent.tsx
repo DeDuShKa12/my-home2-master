@@ -16,9 +16,7 @@ const InfoComponent:FC = () => {
 
     return (
         <div className='infoComponentDiv'>
-            <div className="houseDiv">
-                <img src="/pngegg22.png" alt="House"/>
-            </div>
+
             <div className="infoDiv">
                 <h1>Do you want to sell your house and get rid of unnecessary problems?
                     You've come to the right place!</h1>
@@ -36,6 +34,9 @@ const InfoComponent:FC = () => {
                         <br/>
                         to sell the house at a favorable price.
                     </div>
+                </div>
+                <div className="houseDiv">
+                    <img src="/pngegg22.png" alt="House"/>
                 </div>
             </div>
             <ModalWindow isOpen={isModalOpen} onClose={closeModal}/>
