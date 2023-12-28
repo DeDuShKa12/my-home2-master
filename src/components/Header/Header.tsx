@@ -1,13 +1,9 @@
-import React, { FC } from 'react';
-import './Header.css'
+import React, {FC} from 'react';
+import './Header.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebookF, faSquareInstagram} from "@fortawesome/free-brands-svg-icons";
-import {faSquareXTwitter} from "@fortawesome/free-brands-svg-icons/faSquareXTwitter";
-import { useMediaQuery } from 'react-responsive';
+import {faFacebookF, faInstagram, faTwitterSquare} from "@fortawesome/free-brands-svg-icons";
 
 const Header: FC = () => {
-    const isSmallScreen = useMediaQuery({ maxWidth: 1200 });
-    const iconSize = isSmallScreen ? 'xl' : '2xl';
     return (
         <div className='mainBoxHeader'>
             <div className="logoHeader">
@@ -15,13 +11,13 @@ const Header: FC = () => {
             </div>
             <div className='buttonBoxInHeader'>
                 <button type="button" className="myBtnInHeader btn btn-warning">
-                    <FontAwesomeIcon icon={faSquareInstagram} size={iconSize} style={{color: "#df0712",}}/>
+                    <FontAwesomeIcon icon={faInstagram} style={{color: "#df0712"}} className="icon"/>
                 </button>
                 <button type="button" className="myBtnInHeader btn btn-primary">
-                    <FontAwesomeIcon icon={faFacebookF} size={iconSize}/>
+                    <FontAwesomeIcon icon={faFacebookF} className="icon"/>
                 </button>
                 <button type="button" className="myBtnInHeader btn btn-dark">
-                    <FontAwesomeIcon icon={faSquareXTwitter} style={{color: "#648bce",}} size={iconSize}/>
+                    <FontAwesomeIcon icon={faTwitterSquare} style={{color: "#648bce"}} className="icon"/>
                 </button>
             </div>
             <div className="compInfo">

@@ -28,7 +28,7 @@ const InfoComponent:FC = () => {
                 </div>
                 <button onClick={openModal} type="button" className="myBtnConfig">Sell the house</button>
                 <div className="bonuses">
-                    <span>Your bonuses when filling out the questionnaire:</span>
+                    <h4>Your bonuses when filling out the questionnaire:</h4>
                     <div className="bonusesDetails">
                         Free consultation and the opportunity
                         <br/>
