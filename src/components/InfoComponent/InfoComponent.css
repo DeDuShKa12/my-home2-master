@@ -212,23 +212,77 @@
     }
 }
 @media screen and (max-width: 502px){
+    .infoComponentDiv {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
     .subtitle {
         line-height: 11px;
     }
     .bonuses {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bonuses h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bonusesDetails {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .logo {
         width: 100%;
     }
     .logo img {
-        width: 20%;
-        max-width: 200px;
-        border-radius: 15px;
+        width: 15%;
+        border-radius: 10px;
     }
     .myBtnConfig {
         margin-top: 10px;
         height: 30px;
         font-size: 15px;
+        width: 60%;
+    }
+    .infoDiv {
+        width: 80%;
+        height: 400px;
+        justify-content: start;
+        align-items: center;
+        padding: 4%;
+    }
+    .houseDiv {
+        width: 90%;
+        left: 5%;
+        bottom: -29%;
+    }
+}
+
+@media screen and (max-width: 488px){
+    .houseDiv {
+        width: 90%;
+        left: 5%;
+        bottom: -26%;
+    }
+}
+
+@media screen and (max-width: 402px){
+    .houseDiv {
+        bottom: -13%;
+    }
+    .bonusesDetails {
+        width: 90%;
+    }
+    .myBtnConfig {
+        margin-top: 10px;
+        height: 30px;
+        font-size: 10px;
+        width: 70%;
     }
 }
