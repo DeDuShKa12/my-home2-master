@@ -69,7 +69,7 @@ interface ModalWindowProps {
 
 interface Question {
     question: string;
-    type: 'multipleChoice' | 'textInput'; // Додайте новий тип 'textInput'
+    type: 'multipleChoice' | 'textInput';
     options?: string[];
 }
 
@@ -176,9 +176,12 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
             {isOpen && (
                 <div className="modal-overlay" onClick={onClose}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <span className="close-btn" onClick={onClose}>&times;</span>
+                        <div className="modalHeader">
+                            <h1>Fill out a short questionnaire to receive a consultation</h1>
+                            <span className="close-btn" onClick={onClose}>&times;</span>
+                        </div>
                         {renderQuestion()}
-                        <div>
+                        <div className="lastModalBox">
                             <button onClick={handleNextQuestion}>Next</button>
                         </div>
                     </div>
