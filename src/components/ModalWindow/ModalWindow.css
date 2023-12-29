@@ -16,7 +16,7 @@
     padding: 20px 40px 30px 40px;
     border: 1px solid #888;
     width: 80%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     align-items: flex-end;
     color: #f1f1f1;
@@ -38,8 +38,12 @@
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
+}
+.questionBox h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .answersBox {
     width: 100%;
@@ -51,11 +55,26 @@
 
 .modalHeader {
     width:100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    border-bottom: 3px solid #2f2b2b;
 }
-.modalHeader h1 {
-    font-size: 25px;
+.dark-button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Анімація для зміни кольору */
+    border-radius: 10px;
 }
+
+.dark-button:hover {
+    background-color: #555; /* Новий колір фону при наведенні */
+    color: #fff; /* Новий колір тексту при наведенні */
+    transform: scale(1.1); /* Збільшення розміру при наведенні */
+}
+
+

@@ -136,7 +136,7 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
             case 'textInput':
                 return (
                     <div className="questionBox">
-                        <h2>{currentQuestion.question}</h2>
+                        <h3>{currentQuestion.question}</h3>
                         <input
                             type="text"
                             value={selectedAnswer || ''}
@@ -147,7 +147,7 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
             case 'multipleChoice':
                 return (
                     <div className="questionBox">
-                        <h2>{currentQuestion.question}</h2>
+                        <h3>{currentQuestion.question}</h3>
                         <ul>
                             {currentQuestion.options?.map((option, index) => (
                                 <li key={index}>
@@ -182,7 +182,9 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
                         </div>
                         {renderQuestion()}
                         <div className="lastModalBox">
-                            <button onClick={handleNextQuestion}>Next</button>
+                            <button className="dark-button" onClick={handleNextQuestion}>
+                                Next
+                            </button>
                         </div>
                     </div>
                 </div>
