@@ -7,7 +7,7 @@ const Header: FC = () => {
     return (
         <div className='mainBoxHeader'>
             <div className="logoHeader">
-                <img src="https://drive.google.com/uc?export=view&id=1opHh4lu41qmRVlB0yhAdYYM3rNl7b11l" alt="Not House Recovery"/>
+                <img src="/logo.png" alt="Not House Recovery"/>
             </div>
             <div className='buttonBoxInHeader'>
                 <button type="button" className="myBtnInHeader btn btn-warning">

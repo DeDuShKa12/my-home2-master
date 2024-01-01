@@ -24,7 +24,7 @@ const InfoComponent:FC = () => {
                     Answer a few questions and we will get in touch with you to help solve your issue!
                 </div>
                 <div className="logo">
-                    <img src="https://drive.google.com/uc?export=view&id=1-0UeRV8IOfNIjMr3NwT1z-dGxb9wPd6H" alt="Logo"/>
+                    <img src="/logoSolo.png" alt="Logo"/>
                 </div>
                 <button onClick={openModal} type="button" className="myBtnConfig">Sell the house</button>
                 <div className="bonuses">
@@ -36,7 +36,7 @@ const InfoComponent:FC = () => {
                     </div>
                 </div>
                 <div className="houseDiv">
-                    <img src="https://drive.google.com/uc?export=view&id=18uqX4rFJVF5afnlMq7xlz5Zw-F6-Bsut" alt="House"/>
+                    <img src="/pngegg22.png" alt="House"/>
                 </div>
             </div>
             <ModalWindow isOpen={isModalOpen} onClose={closeModal}/>

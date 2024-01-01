@@ -1,64 +1,3 @@
-// import React, {FC, useState} from 'react';
-// import './ModalWindow.css';
-//
-// interface ModalWindowProps {
-//     isOpen: boolean;
-//     onClose: () => void;
-// }
-//
-// const questions = [
-//     {
-//         question: 'Question 1',
-//         options: ['Option A', 'Option B', 'Option C'],
-//     },
-//     {
-//         question: 'Question 2',
-//         options: ['Option X', 'Option Y', 'Option Z'],
-//     },
-//     // Додайте інші запитання та варіанти відповідей за потребою
-// ];
-//
-// const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
-//     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-//
-//     const handleNextQuestion = () => {
-//         if (currentQuestionIndex < questions.length - 1) {
-//             setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-//         } else {
-//             // Якщо користувач відповів на всі запитання, можна закрити модальне вікно або здійснити інші дії
-//             onClose();
-//         }
-//     };
-//     return (
-//         <>
-//             {isOpen && (
-//                 <div className="modal-overlay" onClick={onClose}>
-//                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-//                         <span className="close-btn" onClick={onClose}>&times;</span>
-//                         <div className="questionBox">
-//                             <h2>{questions[currentQuestionIndex].question}</h2>
-//                         </div>
-//                         <div className="answersBox">
-//                             <ul>
-//                                 {questions[currentQuestionIndex].options.map((option, index) => (
-//                                     <li key={index}>
-//                                         <label>
-//                                             <input type="radio" name="answer" value={option} />
-//                                             {option}
-//                                         </label>
-//                                     </li>
-//                                 ))}
-//                             </ul>
-//                         </div>
-//                         <div><button onClick={handleNextQuestion}>Next</button></div>
-//                     </div>
-//                 </div>
-//             )}
-//         </>
-//     );
-// };
-//
-// export {ModalWindow};
 import React, {FC, useState, useEffect} from 'react';
 import './ModalWindow.css';
 
@@ -194,4 +133,3 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
 };
 
 export {ModalWindow};
-
