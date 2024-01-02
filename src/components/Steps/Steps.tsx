@@ -48,7 +48,7 @@ const Steps: FC = () => {
                     <div className="numberDiv">Step 1</div>
                     <img src="/logoSolo.png" alt="Logo"/>
                 </div>
-                <h1>Fill out a short questionnaire on our website.</h1>
+                <h1>Fill Out A Short Questionnaire</h1>
                 <div>
                     Provide answers to just 5 questions so that we can better understand
                     your situation and get in touch with you.

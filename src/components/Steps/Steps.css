@@ -1,5 +1,5 @@
 .steps-container {
-    width: 80%;
+    width: 90%;
     max-width: 1700px;
     height: min-content;
     padding: 2%;
@@ -30,6 +30,7 @@
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 .step h1 {
+    width: 60%;
     padding: 10px;
     border-bottom: 3px solid #2f2b2b;
 }
@@ -46,6 +47,24 @@
     background: rgba(255, 213, 0, 0.9);
 }
 
+.step:nth-child(1) .numberAndLogoDiv {
+    left: -10%;
+    top: -25%;
+}
+
+.step:nth-child(2) .numberAndLogoDiv {
+    right: -10%;
+    top: -25%;
+}
+.step:nth-child(2) {
+   align-items: flex-start;
+}
+
+.step:nth-child(3) .numberAndLogoDiv {
+    left: -10%;
+    top: -25%;
+}
+
 .numberAndLogoDiv {
     width: 50%;
     height: min-content;
@@ -53,8 +72,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    left: -6%;
-    top: -25%;
     box-shadow: -4px 0 12px rgb(255, 171, 0);
     background: #050505;
     border-radius: 20px;
@@ -79,4 +96,171 @@
     max-width: 300px;
     height: auto;
     border-radius: 70px;
+}
+
+@media screen and (max-width: 2030px){
+    .numberAndLogoDiv {
+        width: 45%;
+    }
+    .step {
+        font-size: 35px;
+    }
+    .step:nth-child(2) .numberAndLogoDiv {
+        right: -10%;
+        top: -20%;
+    }
+}
+
+@media screen and (max-width: 1698px){
+    .step:nth-child(1) .numberAndLogoDiv {
+        left: -10%;
+        top: -15%;
+    }
+
+    .step:nth-child(2) .numberAndLogoDiv {
+        right: -10%;
+        top: -5%;
+    }
+
+    .step:nth-child(3) .numberAndLogoDiv {
+        left: -10%;
+        top: -15%;
+    }
+    .step h1 {
+        font-size: 30px;
+    }
+    .step {
+        margin: 40px 0;
+        font-size: 25px;
+    }
+    .numberDiv {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .step {
+        font-size: 20px;
+    }
+    .step h1 {
+        font-size: 25px;
+    }
+    .numberDiv {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .step {
+        font-size: 15px;
+        padding: 2%;
+        margin: 15px 0;
+    }
+    .step h1 {
+        font-size: 20px;
+        padding:0 0 10px 0;
+    }
+    .numberDiv {
+        font-size: 20px;
+    }
+    .numberAndLogoDiv {
+        width: 35%;
+    }
+    .step.visible {
+        transform: translateX(50px);
+
+    }
+    .step.visible1 {
+        transform: translateX(-50px);
+    }
+    .step:nth-child(2) .numberAndLogoDiv {
+        right: -10%;
+        top: -10%;
+    }
+    .numberDiv {
+        border: 2px solid rgba(255, 213, 0, 0.7);
+    }
+}
+@media screen and (max-width: 750px){
+    .numberAndLogoDiv {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .numberAndLogoDiv {
+        width: 50%;
+    }
+    .step:nth-child(1) .numberAndLogoDiv {
+        left: -12%;
+        top: -5%;
+    }
+
+    .step:nth-child(2) .numberAndLogoDiv {
+        top: -5%;
+    }
+
+    .step:nth-child(3) .numberAndLogoDiv {
+        left: -12%;
+        top: -5%;
+    }
+    .step.visible {
+        transform: translateX(30px);
+
+    }
+    .step.visible1 {
+        transform: translateX(-30px);
+    }
+}
+
+@media screen and (max-width: 499px){
+    .step {
+        font-size: 13px;
+        padding: 3%;
+        margin: 12px 0;
+    }
+    .step h1 {
+        font-size: 15px;
+        padding:0 0 10px 0;
+    }
+    .numberDiv {
+        width: 80%;
+        font-size: 12px;
+        position: absolute;
+        top: -15%;
+        left: 9%;
+    }
+    .numberAndLogoDiv {
+        width: 30%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    .numberAndLogoDiv img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 399px){
+    .numberAndLogoDiv {
+        width: 40%;
+        height: 42%;
+    }
+    .numberAndLogoDiv img {
+        width: 37%;
+    }
+    .step {
+        font-size: 12px;
+        padding: 4%;
+        margin: 10px 0;
+    }
+    .step h1 {
+        font-size: 12px;
+        padding:0 0 5px 0;
+    }
+    .numberDiv {
+        width: 80%;
+        font-size: 11px;
+    }
 }
