@@ -44,28 +44,37 @@ const Steps: FC = () => {
     return (
         <div className={`steps-container ${isVisible ? 'visible' : ''}`}>
             <div className="step">
-                <div className="numberDiv">1</div>
-                <div>Заповнюєте анкету</div>
+                <div className="numberAndLogoDiv">
+                    <div className="numberDiv">Step 1</div>
+                    <img src="/logoSolo.png" alt="Logo"/>
+                </div>
+                <h1>Fill out a short questionnaire on our website.</h1>
+                <div>
+                    Provide answers to just 5 questions so that we can better understand
+                    your situation and get in touch with you.
+                </div>
             </div>
             <div className="step">
-                <div className="numberDiv">2</div>
-                <div>Отримав зворотній зв'язок</div>
+                <div className="numberAndLogoDiv">
+                    <div className="numberDiv">Step 2</div>
+                    <img src="/logoSolo.png" alt="Logo"/>
+                </div>
+                <h1>Property Analysis & No Obligation Offer</h1>
+                <div>
+                    We will reach out to you and offer an analysis of your options, as well as a cash offer "as is."
+                    No real estate agents needed!
+                </div>
             </div>
             <div className="step">
-                <div className="numberDiv">3</div>
-                <div>Домовився про зустріч</div>
-            </div>
-            <div className="step">
-                <div className="numberDiv">4</div>
-                <div>Заповнив документи</div>
-            </div>
-            <div className="step">
-                <div className="numberDiv">5</div>
-                <div>Отримав гроші</div>
-            </div>
-            <div className="step">
-                <div className="numberDiv">6</div>
-                <div>Кінець</div>
+                <div className="numberAndLogoDiv">
+                    <div className="numberDiv">Step 3</div>
+                        <img src="/logoSolo.png" alt="Logo"/>
+                </div>
+                <h1>Close Deal & Cash Payment</h1>
+                <div>
+                    We offer cash for your home and can close the deal in as little as 3 days. We'll deposit $10,000
+                    earnest money and cover all closing costs.
+                </div>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-import React, {FC, useState, useEffect} from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import './ModalWindow.css';
 
 interface ModalWindowProps {
@@ -34,7 +34,7 @@ const questions: Question[] = [
     {
         question: 'Question 5',
         type: 'textInput',
-    }
+    },
 ];
 
 const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
@@ -51,7 +51,7 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
     }, [isOpen]);
 
     const handleNextQuestion = () => {
-        setAnswers((prevAnswers) => [...prevAnswers, selectedAnswer || ""]);
+        setAnswers((prevAnswers) => [...prevAnswers, selectedAnswer || '']);
 
         if (currentQuestionIndex < questions.length) {
             setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
@@ -66,6 +66,10 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
         console.log({
             answers,
         });
+    };
+
+    const handleOptionClick = (option: string) => {
+        setSelectedAnswer(option);
     };
 
     const renderQuestion = () => {
@@ -89,17 +93,12 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
                         <h3>{currentQuestion.question}</h3>
                         <ul>
                             {currentQuestion.options?.map((option, index) => (
-                                <li key={index}>
-                                    <label>
-                                        <input
-                                            type="radio"
-                                            name="answer"
-                                            value={option}
-                                            checked={selectedAnswer === option}
-                                            onChange={() => setSelectedAnswer(option)}
-                                        />
-                                        {option}
-                                    </label>
+                                <li
+                                    key={index}
+                                    className={`option ${selectedAnswer === option ? 'active-option' : ''}`}
+                                    onClick={() => handleOptionClick(option)}
+                                >
+                                    {option}
                                 </li>
                             ))}
                         </ul>
@@ -117,7 +116,9 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                         <div className="modalHeader">
                             <h1>Fill out a short questionnaire to receive a consultation</h1>
-                            <span className="close-btn" onClick={onClose}>&times;</span>
+                            <span className="close-btn" onClick={onClose}>
+                &times;
+              </span>
                         </div>
                         {renderQuestion()}
                         <div className="lastModalBox">
@@ -132,4 +133,4 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
     );
 };
 
-export {ModalWindow};
+export { ModalWindow };

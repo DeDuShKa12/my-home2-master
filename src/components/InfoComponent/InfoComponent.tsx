@@ -1,18 +1,10 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import './InfoComponent.css'
-import {ModalWindow} from "../ModalWindow/ModalWindow";
 
-const InfoComponent:FC = () => {
-
-    const [isModalOpen, setModalOpen] = useState(false);
-
-    const openModal = () => {
-        setModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setModalOpen(false);
-    };
+interface InfoComponentProps {
+    openModal: () => void;
+}
+const InfoComponent:FC<InfoComponentProps> = ({openModal}) => {
 
     return (
         <div className='infoComponentDiv'>
@@ -39,7 +31,6 @@ const InfoComponent:FC = () => {
                     <img src="/pngegg22.png" alt="House"/>
                 </div>
             </div>
-            <ModalWindow isOpen={isModalOpen} onClose={closeModal}/>
         </div>
     );
 };

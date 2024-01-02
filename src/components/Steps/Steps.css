@@ -1,31 +1,37 @@
 .steps-container {
-    box-sizing: border-box;
+    width: 80%;
+    max-width: 1700px;
+    height: min-content;
+    padding: 2%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    color: #ffffff;
     background: linear-gradient(to right, rgb(0, 0, 0, 0.8) 50%, rgba(255, 213, 0, 0.5));
-    box-shadow:
-            -4px 0 18px rgb(0, 0, 0),
-            4px 0 18px rgba(255, 213, 0, 0.9);
-    width: 90%;
-    height: 75vh;
-    margin-top: 50px;
+    box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgba(255, 213, 0, 0.9);
+    border: 10px solid rgba(255, 213, 0);
+    position: relative;
 }
-
 
 .step {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
     border-radius: 30px;
-    flex-basis: 35%;
     opacity: 0;
-    height: 15%;
-    margin: 10px 0;
-    font-size: 18px;
+    padding: 3%;
+    width: 80%;
+    height: min-content;
+    margin: 80px 0;
+    font-size: 40px;
     transform: translateX(0px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.step h1 {
+    padding: 10px;
+    border-bottom: 3px solid #2f2b2b;
 }
 
 .step.visible {
@@ -39,17 +45,38 @@
     transform: translate(-100px);
     background: rgba(255, 213, 0, 0.9);
 }
-.numberDiv {
-    width: 50px;
-    height: 50px;
-    background: rgba(3, 3, 3);
-    border-radius: 50%;
-    border: 2px solid rgba(255, 213, 0, 0.7);
+
+.numberAndLogoDiv {
+    width: 50%;
+    height: min-content;
+    position: absolute;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: -6%;
+    top: -25%;
+    box-shadow: -4px 0 12px rgb(255, 171, 0);
+    background: #050505;
+    border-radius: 20px;
+}
+.numberDiv {
+    width: 40%;
+    height: auto;
+    background: rgb(19, 18, 18);
+    border-radius: 10px;
+    border: 4px solid rgba(255, 213, 0, 0.7);
+    display: flex;
+    font-size: 45px;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin-bottom: 50px;
-    margin-right: 410px;
     color: wheat;
+    top: 0;
+    left: 0;
+}
+
+.numberAndLogoDiv img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 70px;
 }
