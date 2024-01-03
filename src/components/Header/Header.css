@@ -61,7 +61,7 @@
     padding-right: 20px;
 }
 
-.compInfo span {
+.compInfo a {
     font-style: normal;
     font-size: 27px;
     line-height: 30px;
@@ -71,14 +71,14 @@
 }
 
 @media screen and (max-width: 1920px) {
-    .compInfo span {
+    .compInfo a {
         font-size: 20px;
         line-height: 23px;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .compInfo span {
+    .compInfo a {
         font-size: 16px;
         line-height: 17px;
     }
@@ -93,7 +93,7 @@
     }
 }
 @media screen and (max-width: 999px) {
-    .compInfo span {
+    .compInfo a {
         font-size: 13px;
         line-height: 16px;
     }
@@ -109,7 +109,7 @@
 }
 
 @media screen and (max-width: 799px) {
-    .compInfo span {
+    .compInfo a {
         font-size: 11px;
         line-height: 14px;
     }
@@ -124,7 +124,7 @@
     }
 }
 @media screen and (max-width: 599px) {
-    .compInfo span {
+    .compInfo a {
         font-size: 8px;
         line-height: 11px;
     }
@@ -143,8 +143,8 @@
     .mainBoxHeader {
         height: 40px;
     }
-    .compInfo span {
-        font-size: 7px;
+    .compInfo a {
+        font-size: 8px;
         line-height: 10px;
     }
     .compInfo {
@@ -159,8 +159,8 @@
     .mainBoxHeader {
         height: 40px;
     }
-    .compInfo span {
-        font-size: 5px;
+    .compInfo a {
+        font-size: 6px;
         line-height: 8px;
     }
     .compInfo {

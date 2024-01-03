@@ -21,8 +21,8 @@ const Header: FC = () => {
                 </button>
             </div>
             <div className="compInfo">
-                <span>Webuyanyhousesforcash@gmail.com</span>
-                <span>+380 96 2322 323</span>
+                <a href="mailto:webuyanyhousesforcash@gmail.com">Webuyanyhousesforcash@gmail.com</a>
+                <a href="tel:+380962322323">+380 96 2322 323</a>
             </div>
         </div>
     );
