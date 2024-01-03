@@ -55,23 +55,36 @@
     width: 33%;
     height: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
     flex-direction: column;
     padding-right: 20px;
 }
 
 .compInfo a {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-style: normal;
     font-size: 27px;
     line-height: 30px;
     color: #020202;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255);
     font-weight: bold;
+    background: rgba(255, 213, 0, 0.9);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.compInfo a:hover {
+    background: #ffe758;
+    border: 2px solid rgb(77, 87, 98);
 }
 
 @media screen and (max-width: 1920px) {
     .compInfo a {
+        width: 80%;
         font-size: 20px;
         line-height: 23px;
     }
@@ -79,6 +92,7 @@
 
 @media screen and (max-width: 1440px) {
     .compInfo a {
+        width: 95%;
         font-size: 16px;
         line-height: 17px;
     }
@@ -94,8 +108,11 @@
 }
 @media screen and (max-width: 999px) {
     .compInfo a {
+        width: 100%;
         font-size: 13px;
         line-height: 16px;
+        padding: 1px;
+        border: 1px solid black;;
     }
     .mainBoxHeader {
         height: 50px;
@@ -110,7 +127,8 @@
 
 @media screen and (max-width: 799px) {
     .compInfo a {
-        font-size: 11px;
+        width: 120%;
+        font-size: 12px;
         line-height: 14px;
     }
     .mainBoxHeader {
@@ -122,11 +140,17 @@
     .icon {
         font-size: 15px;
     }
+    .compInfo {
+        padding-right: 10px;
+    }
 }
 @media screen and (max-width: 599px) {
     .compInfo a {
-        font-size: 8px;
-        line-height: 11px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .compInfo {
+        padding-right: 5px;
     }
     .icon {
         font-size: 10px;
@@ -148,14 +172,20 @@
         line-height: 10px;
     }
     .compInfo {
-        padding-right: 10px;
+        padding-right: 2px;
+    }
+    .compInfo a{
+        width: 110%;
     }
     .logoHeader img{
         width: 100px;
     }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 410px) {
+    .compInfo a{
+        width: 105%;
+    }
     .mainBoxHeader {
         height: 40px;
     }
@@ -168,5 +198,15 @@
     }
     .logoHeader img{
         width: 80px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .compInfo a {
+        font-size: 5px;
+        line-height: 6px;
+    }
+    .compInfo a{
+        width: 100%;
     }
 }
