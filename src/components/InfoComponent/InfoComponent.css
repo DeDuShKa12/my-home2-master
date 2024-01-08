@@ -9,10 +9,10 @@
 }
 
 .houseDiv {
-    width: 70%;
+    width: 65%;
     position: absolute;
-    left: -10%;
-    bottom: -15%;
+    left: -6%;
+    bottom: -10%;
 }
 
 .houseDiv img {
@@ -22,10 +22,10 @@
 }
 
 .infoDiv {
-    width: 80%;
+    width: 90%;
     max-width: 1700px;
     height: min-content;
-    padding: 4%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,13 +35,14 @@
     box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgba(255, 213, 0, 0.9);
     border: 10px solid rgba(255, 213, 0);
     position: relative;
-
+}
+.infoDiv h1 {
+    font-size: 55px;
 }
 
 .subtitle {
     font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 40px;
     margin-top: 20px;
     max-width: 760px;
 }
@@ -70,12 +71,12 @@
 .bonuses h4 {
     width: 100%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #ffab00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .bonusesDetails {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .myBtnConfig {
@@ -84,7 +85,7 @@
     height: 60px;
     background: rgba(255, 213, 0, 0.9);
     color: #020202;
-    font-size: 25px;
+    font-size: 35px;
     border: 4px solid rgb(2, 2, 2, 0.9);
     box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgb(187, 162, 3);
     border-radius: 10px;
@@ -105,15 +106,15 @@
 @media screen and (max-width: 1599px){
     .houseDiv {
         width: 60%;
-        left: -10%;
-        bottom: -15%;
+        left: -6%;
+        bottom: -10%;
     }
     .infoComponentDiv {
         margin-top: 120px;
         margin-bottom: 120px;
     }
     .bonusesDetails {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -122,18 +123,14 @@
         margin-top: 100px;
         margin-bottom: 100px;
     }
-    .infoDiv {
-        padding: 2%;
-    }
     .infoDiv h1 {
-        font-size: 25px;
+        font-size: 40px;
     }
     .bonusesDetails {
-        font-size: 15px;
+        font-size: 20px;
     }
     .subtitle {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 30px;
 
     }
     .bonuses {
@@ -141,8 +138,7 @@
     }
 
     .bonuses h4 {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 25px;
     }
     .logo {
         margin-top: 30px;
@@ -153,14 +149,12 @@
 }
 
 @media screen and (max-width: 1099px){
-    .infoDiv {
-        padding: 2%;
-    }
     .infoDiv h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     .subtitle {
         margin-top: 15px;
+        font-size: 20px;
     }
     .bonuses {
         margin-top: 20px;
@@ -170,45 +164,53 @@
     }
     .myBtnConfig {
         margin-top: 20px;
+        font-size: 25px;
     }
     .bonusesDetails {
-        font-size: 14px;
+        font-size: 17px;
+    }
+    .bonuses h4 {
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 799px){
-    .infoDiv {
-        padding: 1%;
-    }
     .infoDiv h1 {
-        font-size: 15px;
+        font-size: 25px;
     }
     .subtitle {
-        font-size: 10px;
+        font-size: 15px;
         margin-top: 0;
     }
     .bonuses {
         margin-top: 10px;
     }
     .bonuses h4 {
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 17px;
     }
     .bonusesDetails {
-        font-size: 8px;
+        font-size: 12px;
     }
     .logo {
+        width: 45%;
         margin-top: 10px;
     }
     .logo img {
-        width: 20%;
+        width: 25%;
         max-width: 200px;
         border-radius: 15px;
     }
     .myBtnConfig {
+        width: 45%;
         margin-top: 10px;
-        height: 30px;
-        font-size: 15px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .bonuses {
+        width: 45%;
+    }
+    .houseDiv {
+        bottom: -7%;
     }
 }
 @media screen and (max-width: 502px){
@@ -217,7 +219,7 @@
         margin-bottom: 60px;
     }
     .subtitle {
-        line-height: 11px;
+        margin-top: 10px;
     }
     .bonuses {
         width: 100%;
@@ -227,15 +229,16 @@
         flex-direction: column;
     }
     .bonuses h4 {
+        font-size: 15px;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .bonusesDetails {
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 14px;
     }
     .logo {
         width: 100%;
@@ -251,38 +254,62 @@
         width: 60%;
     }
     .infoDiv {
-        width: 80%;
-        height: 400px;
+        height: 600px;
         justify-content: start;
         align-items: center;
-        padding: 4%;
+        padding: 2%;
     }
     .houseDiv {
         width: 90%;
         left: 5%;
-        bottom: -29%;
+        bottom: -8%;
     }
 }
 
-@media screen and (max-width: 488px){
-    .houseDiv {
-        width: 90%;
-        left: 5%;
-        bottom: -26%;
+@media screen and (max-width: 425px){
+    .infoDiv {
+        width: 382px;
     }
 }
 
-@media screen and (max-width: 402px){
-    .houseDiv {
-        bottom: -13%;
+@media screen and (max-width: 380px){
+    .infoDiv {
+        width: 345px;
+        height: 500px;
+    }
+    .infoDiv h1 {
+        font-size: 21px;
+    }
+    .subtitle {
+        font-size: 13px;
+    }
+    .bonuses h4{
+        font-size: 13px;
     }
     .bonusesDetails {
-        width: 90%;
+        font-size: 11px;
     }
-    .myBtnConfig {
-        margin-top: 10px;
-        height: 30px;
+}
+
+@media screen and (max-width: 330px){
+    .infoDiv {
+        width: 290px;
+        height: 420px;
+        padding: 6px;
+    }
+    .infoDiv h1 {
+        font-size: 16px;
+    }
+    .subtitle {
+        font-size: 12px;
+    }
+    .bonuses h4{
+        font-size: 11px;
+    }
+    .bonusesDetails {
         font-size: 10px;
-        width: 70%;
+    }
+    .houseDiv {
+        bottom: -10%;
     }
 }
