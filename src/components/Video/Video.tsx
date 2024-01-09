@@ -3,7 +3,10 @@ import './Video.css'
 
 const Video: FC = () => {
     return (
-        <div className='videoBox'>
+        <div className='videoComponentDiv'>
+            <div className='videoAndInfoBox'>
+
+            </div>
 
         </div>
     );

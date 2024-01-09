@@ -1,33 +1,156 @@
 .lastInfoBox {
     box-sizing: border-box;
     background-size: 100% auto;
-    height: 25vh;
-    background-image: url("https://drive.google.com/uc?export=view&id=1RF0NZSvM_ixOurbu_ObXhnByJSWpsU_S");
+    height: 320px;
+    background-image: url("/public/LastInfoBox.bmp");
     transform: perspective(2000px);
-    box-shadow:
-            -4px 0 25px rgb(0, 0, 0),
-            4px 0 25px rgba(255, 213, 0, 0.9);
+    box-shadow: -4px 0 25px rgb(0, 0, 0),
+    4px 0 25px rgba(255, 213, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: wheat;
     flex-direction: column;
+    padding: 25px;
 }
 
 .buttonBox {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 33%;
+    height: 90%;
 }
+
 .myBtn {
     box-sizing: border-box;
-    width: 25%;
-    height: 100%;
+    width: 15%;
+    height: min-content;
+    margin: 10px;
     border: 2px solid rgba(246, 246, 246, 0.6);
-    border-radius: 20%;
-    box-shadow: 0 0 8px rgba(255, 213, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(255, 213, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.lastIcon {
+    font-size: 50px;
+}
+
+.lastCompInfo {
+    width: 33%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lastCompInfo a {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #020202;
+    font-weight: bold;
+    background: rgba(255, 213, 0, 0.9);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.lastCompInfo a:hover {
+    background: #ffe758;
+    border: 2px solid rgb(77, 87, 98);
+}
+
+@media screen and (max-width: 1920px) {
+    .lastInfoBox {
+        height: 270px;
+    }
+    .lastCompInfo a {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .lastInfoBox {
+        height: 250px;
+        padding: 15px;
+    }
+    .lastCompInfo a {
+        font-size: 20px;
+    }
+    .lastIcon {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .lastIcon {
+        font-size: 30px;
+    }
+    .lastInfoBox {
+        height: 200px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .lastCompInfo a {
+        width: 100%;
+        font-size: 18px;
+    }
+    .lastInfoBox {
+        height: 150px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .lastCompInfo a {
+        width: 330px;
+    }
+    .lastIcon {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .lastInfoBox {
+        height: 130px;
+    }
+    .lastIcon {
+        font-size: 20px;
+    }
+    .lastCompInfo a {
+        width: 250px;
+        font-size: 12px;
+    }
+    .myBtn {
+        margin: 5px;
+        padding: 2px;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .lastInfoBox {
+        height: 90px;
+    }
+    .lastCompInfo a {
+        width: 180px;
+        font-size: 9px;
+    }
+    .lastIcon {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .lastInfoBox {
+        height: 80px;
+    }
+    .lastCompInfo a {
+        width: 160px;
+        font-size: 8px;
+    }
+    .lastIcon {
+        font-size: 12px;
+    }
 }

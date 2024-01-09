@@ -142,9 +142,9 @@
         width: 120%;
         font-size: 12px;
     }
-    .mainBoxHeader {
-        height: 50px;
-    }
+    /*.mainBoxHeader {*/
+    /*    height: 50px;*/
+    /*}*/
     .myBtnInHeader {
         margin: 5px;
     }
@@ -153,6 +153,8 @@
     }
     .compInfo {
         padding-right: 10px;
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 599px) {
@@ -174,17 +176,10 @@
         height: 85%;
     }
 }
-@media screen and (max-width: 490px) {
-    .mainBoxHeader {
-        height: 40px;
-    }
-    .logoHeader img{
-        width: 100px;
-    }
-}
 
 @media screen and (max-width: 410px) {
     .logoHeader img{
-        width: 80px;
+        width: 100px;
+        height: 69%;
     }
 }

@@ -72,7 +72,7 @@ const Header: FC = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 490);
+            setIsSmallScreen(window.innerWidth < 800);
         };
 
         window.addEventListener('resize', handleResize);
@@ -101,7 +101,7 @@ const Header: FC = () => {
             <div className="compInfo">
                 {isSmallScreen ? (
                     <button className="btn-show-modal" onClick={openModal}>
-                        Contact Info
+                        Contacts
                     </button>
                 ) : (
                     <>

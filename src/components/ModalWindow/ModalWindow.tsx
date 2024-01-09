@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, {FC, useState, useEffect, useCallback} from 'react';
 import './ModalWindow.css';
 
 interface ModalWindowProps {
@@ -7,6 +7,7 @@ interface ModalWindowProps {
 }
 
 interface Question {
+    id: number;
     question: string;
     type: 'multipleChoice' | 'textInput';
     options?: string[];
@@ -14,30 +15,35 @@ interface Question {
 
 const questions: Question[] = [
     {
+        id: 1,
         question: 'Question 1',
         type: 'multipleChoice',
         options: ['Option A', 'Option B', 'Option C'],
     },
     {
+        id: 2,
         question: 'Question 2',
         type: 'multipleChoice',
         options: ['Option X', 'Option Y', 'Option Z'],
     },
     {
+        id: 3,
         question: 'Question 3',
         type: 'textInput',
     },
     {
+        id: 4,
         question: 'Question 4',
         type: 'textInput',
     },
     {
+        id: 5,
         question: 'Question 5',
         type: 'textInput',
     },
 ];
 
-const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
+const ModalWindow: FC<ModalWindowProps> = ({isOpen, onClose}) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
     const [answers, setAnswers] = useState<string[]>([]);
@@ -50,23 +56,21 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
         }
     }, [isOpen]);
 
-    const handleNextQuestion = () => {
-        setAnswers((prevAnswers) => [...prevAnswers, selectedAnswer || '']);
+    const handleResult = useCallback(() => {
+        console.log([...answers, selectedAnswer || ""]);
+        onClose();
+    }, [answers, onClose, selectedAnswer]);
 
-        if (currentQuestionIndex < questions.length) {
+    const handleNextQuestion = useCallback(() => {
+        if (currentQuestionIndex < questions.length - 1) {
+            setAnswers((prevAnswers) => [...prevAnswers, selectedAnswer || ""]);
             setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
             setSelectedAnswer(null);
         } else {
-            sendAnswersToServerOrSaveLocally();
-            onClose();
+            handleResult();
         }
-    };
+    }, [currentQuestionIndex, handleResult, selectedAnswer]);
 
-    const sendAnswersToServerOrSaveLocally = () => {
-        console.log({
-            answers,
-        });
-    };
 
     const handleOptionClick = (option: string) => {
         setSelectedAnswer(option);
@@ -83,8 +87,7 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
                         <input
                             type="text"
                             value={selectedAnswer || ''}
-                            onChange={(e) => setSelectedAnswer(e.target.value)}
-                        />
+                            onChange={(e) => setSelectedAnswer(e.target.value)}/>
                     </div>
                 );
             case 'multipleChoice':
@@ -133,4 +136,4 @@ const ModalWindow: FC<ModalWindowProps> = ({ isOpen, onClose }) => {
     );
 };
 
-export { ModalWindow };
+export {ModalWindow};
