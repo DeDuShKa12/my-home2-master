@@ -49,7 +49,7 @@ const Steps: FC = () => {
             <div className="step">
                 <div className="numberAndLogoDiv">
                     <div className="numberDiv">Step 1</div>
-                    <img src="/logoSolo.png" alt="Logo" />
+                    <img src="/quest.png" alt="Logo" />
                 </div>
                 <h1>Fill Out A Short Questionnaire</h1>
                 <div>
@@ -59,7 +59,7 @@ const Steps: FC = () => {
             <div className="step">
                 <div className="numberAndLogoDiv">
                     <div className="numberDiv">Step 2</div>
-                    <img src="/logoSolo.png" alt="Logo" />
+                    <img src="/AnalysisOfferIcon.png" alt="Logo" />
                 </div>
                 <h1>Property Analysis & No Obligation Offer</h1>
                 <div>
