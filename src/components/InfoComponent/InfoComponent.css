@@ -1,7 +1,7 @@
 .infoComponentDiv {
     width: 100%;
     margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,6 @@
     }
     .infoComponentDiv {
         margin-top: 120px;
-        margin-bottom: 120px;
     }
     .houseDiv{
         bottom: -6%;
@@ -124,7 +123,6 @@
 @media screen and (max-width: 1399px){
     .infoComponentDiv {
         margin-top: 100px;
-        margin-bottom: 100px;
     }
     .infoDiv h1 {
         font-size: 40px;
@@ -220,7 +218,7 @@
 @media screen and (max-width: 502px){
     .infoComponentDiv {
         margin-top: 70px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
     .subtitle {
         margin-top: 10px;
