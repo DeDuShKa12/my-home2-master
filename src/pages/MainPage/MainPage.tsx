@@ -6,6 +6,7 @@ import {Video} from "../../components/Video/Video";
 import {LastInfoBox} from "../../components/LastInfoBox/LastInfoBox";
 import {ModalWindow} from "../../components/ModalWindow/ModalWindow";
 import {WhySellComponent} from "../../components/WhySellComponent/WhySellComponent";
+import {InfoAndMapComponent} from "../../components/InfoAndMapComponent/infoAndMapComponent";
 
 const MainPage: FC = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -24,6 +25,7 @@ const MainPage: FC = () => {
                 <InfoComponent openModal={openModal}/>
                 <WhySellComponent/>
                 <Steps/>
+                <InfoAndMapComponent/>
                 <Video/>
             </div>
             <LastInfoBox/>

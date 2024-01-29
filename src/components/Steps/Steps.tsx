@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import './Steps.css';
+import '../styles/styles.css'
 
 const Steps: FC = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -45,39 +46,47 @@ const Steps: FC = () => {
     }, []);
 
     return (
-        <div className={`steps-container ${isVisible ? 'visible' : ''}`}>
-            <div className="step">
-                <div className="numberAndLogoDiv">
-                    <div className="numberDiv">Step 1</div>
-                    <img src="/quest.png" alt="Logo" />
-                </div>
-                <h1>Fill Out A Short Questionnaire</h1>
-                <div>
-                    Provide answers to just 5 questions so that we can better understand your situation and get in touch with you.
-                </div>
-            </div>
-            <div className="step">
-                <div className="numberAndLogoDiv">
-                    <div className="numberDiv">Step 2</div>
-                    <img src="/AnalysisOfferIcon.png" alt="Logo" />
-                </div>
-                <h1>Property Analysis & No Obligation Offer</h1>
-                <div>
-                    We will reach out to you and offer an analysis of your options, as well as a cash offer "as is." No real estate agents needed!
-                </div>
-            </div>
-            <div className="step">
-                <div className="numberAndLogoDiv">
-                    <div className="numberDiv">Step 3</div>
-                    <img src="/logoSolo.png" alt="Logo" />
-                </div>
-                <h1>Close Deal & Cash Payment</h1>
-                <div>
-                    We offer cash for your home and can close the deal in as little as 3 days. We'll deposit $10,000 earnest money and cover all closing costs.
+        <div className="mainBgDiv">
+            <div className="mainBox dirColumn">
+                <h1>How It Works</h1>
+                <div className={`steps-container ${isVisible ? 'visible' : ''}`}>
+                    <div className="step">
+                        <div className="numberAndLogoDiv">
+                            <div className="numberDiv">Step 1</div>
+                            <img src="/quest.png" alt="Logo"/>
+                        </div>
+                        <h1>Fill Out A Short Questionnaire</h1>
+                        <div>
+                            Provide answers to just 5 questions so that we can better understand your situation and get
+                            in touch with you.
+                        </div>
+                    </div>
+                    <div className="step">
+                        <div className="numberAndLogoDiv">
+                            <div className="numberDiv">Step 2</div>
+                            <img src="/AnalysisOfferIcon.png" alt="Logo"/>
+                        </div>
+                        <h1>Property Analysis & No Obligation Offer</h1>
+                        <div>
+                            We will reach out to you and offer an analysis of your options, as well as a cash offer "as
+                            is." No real estate agents needed!
+                        </div>
+                    </div>
+                    <div className="step">
+                        <div className="numberAndLogoDiv">
+                            <div className="numberDiv">Step 3</div>
+                            <img src="/logoSolo.png" alt="Logo"/>
+                        </div>
+                        <h1>Close Deal & Cash Payment</h1>
+                        <div>
+                            We offer cash for your home and can close the deal in as little as 3 days. We'll deposit
+                            $10,000 earnest money and cover all closing costs.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     );
 };
 
-export { Steps };
+export {Steps};

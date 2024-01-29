@@ -1,12 +1,13 @@
 import React, {FC} from 'react';
 import './WhySellComponent.css'
+import '../styles/styles.css'
 
 const WhySellComponent: FC = () => {
     return (
-        <div className="whySellComponentDiv">
-            <div className="whySellMainBox">
+        <div className="mainBgDiv">
+            <div className="mainBox">
                 <div className="textAndInfoDiv">
-                    <h1>Why Sell Your Home for Cash?</h1>
+                    <h1 className="header1">Why Sell Your Home for Cash?</h1>
                     <div className="text1">The traditional home selling process is long and arduous. Not only must you
                         acquire a real estate agent, prepare your home for sale, and negotiate with needy potential
                         buyers, but deal with closing processes and inspections, which can take weeks.</div>
@@ -26,7 +27,7 @@ const WhySellComponent: FC = () => {
                             <li className="text1">Anything that would make you want to sell your home as-is</li>
                         </ul>
                     </div>
-                    <button className="goToQuestions">Get my cash offer</button>
+                    <button className="myBtnConfigs">Get my cash offer</button>
                 </div>
                 <div className="imgDiv">
                     <img src="https://vancouverredevelopment.com/wp-content/uploads/2023/01/5445-min.jpg" alt="IMG"/>
