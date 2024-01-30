@@ -1,14 +1,23 @@
 .dirColumn {
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerDiv {
+    background: black;
+    box-shadow: -1px 0 8px rgb(255, 171, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .steps-container {
-    width: 90%;
-    padding: 2%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 .step {
@@ -92,6 +101,7 @@
     width: 30%;
     max-width: 300px;
     height: auto;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 2030px){
@@ -110,17 +120,17 @@
 @media screen and (max-width: 1698px){
     .step:nth-child(1) .numberAndLogoDiv {
         left: -10%;
-        top: -15%;
+        top: -30%;
     }
 
     .step:nth-child(2) .numberAndLogoDiv {
         right: -10%;
-        top: -5%;
+        top: -25%;
     }
 
     .step:nth-child(3) .numberAndLogoDiv {
         left: -10%;
-        top: -15%;
+        top: -30%;
     }
     .step h1 {
         font-size: 30px;
@@ -147,10 +157,13 @@
 }
 
 @media screen and (max-width: 1024px){
+    .steps-container {
+        margin-top: 40px;
+    }
     .step {
         font-size: 15px;
         padding: 2%;
-        margin: 15px 0;
+        margin: 20px 0;
     }
     .step h1 {
         font-size: 20px;
@@ -161,6 +174,7 @@
     }
     .numberAndLogoDiv {
         width: 35%;
+        height: 77px;
     }
     .step.visible {
         transform: translateX(50px);
@@ -170,11 +184,19 @@
         transform: translateX(-50px);
     }
     .step:nth-child(2) .numberAndLogoDiv {
-        right: -10%;
+        right: -8%;
         top: -10%;
     }
     .numberDiv {
         border: 2px solid rgba(255, 213, 0, 0.7);
+    }
+    .step:nth-child(3) .numberAndLogoDiv {
+        top: -20%;
+        left: -8%;
+    }
+    .step:nth-child(1) .numberAndLogoDiv {
+        top: -20%;
+        left: -8%;
     }
 }
 @media screen and (max-width: 750px){
@@ -189,16 +211,17 @@
     }
     .step:nth-child(1) .numberAndLogoDiv {
         left: -12%;
-        top: -5%;
+        top: -7%;
     }
 
     .step:nth-child(2) .numberAndLogoDiv {
-        top: -5%;
+        top: -7%;
+        right: -12%;
     }
 
     .step:nth-child(3) .numberAndLogoDiv {
         left: -12%;
-        top: -5%;
+        top: -7%;
     }
     .step.visible {
         transform: translateX(30px);
@@ -210,10 +233,24 @@
 }
 
 @media screen and (max-width: 499px){
+    .steps-container {
+        margin-top: 30px;
+    }
+    .step:nth-child(1) .numberAndLogoDiv {
+        left: -5%;
+    }
+
+    .step:nth-child(2) .numberAndLogoDiv {
+        right: -5%;
+    }
+
+    .step:nth-child(3) .numberAndLogoDiv {
+        left: -5%;
+    }
     .step {
         font-size: 13px;
         padding: 3%;
-        margin: 12px 0;
+        margin: 15px 0;
     }
     .step h1 {
         font-size: 15px;
@@ -228,28 +265,29 @@
     }
     .numberAndLogoDiv {
         width: 30%;
-        height: 50%;
+        height: 77px;
         flex-direction: column;
         justify-content: center;
-        padding-top: 5%;
+        padding-top: 5px;
     }
     .numberAndLogoDiv img {
         width: 50%;
+        height: 50px;
     }
 }
 
 @media screen and (max-width: 399px){
     .numberAndLogoDiv {
         width: 40%;
-        height: 42%;
+        height: 60px;
     }
     .numberAndLogoDiv img {
         width: 37%;
+        height: 40px;
     }
     .step {
         font-size: 12px;
         padding: 4%;
-        margin: 10px 0;
     }
     .step h1 {
         font-size: 12px;
@@ -258,5 +296,8 @@
     .numberDiv {
         width: 80%;
         font-size: 11px;
+    }
+    .headerDiv {
+        padding: 5px 10px;
     }
 }

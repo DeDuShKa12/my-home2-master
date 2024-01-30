@@ -48,7 +48,9 @@ const Steps: FC = () => {
     return (
         <div className="mainBgDiv">
             <div className="mainBox dirColumn">
-                <h1>How It Works</h1>
+                <div className="headerDiv">
+                    <h1 className="header1">How It Works</h1>
+                </div>
                 <div className={`steps-container ${isVisible ? 'visible' : ''}`}>
                     <div className="step">
                         <div className="numberAndLogoDiv">

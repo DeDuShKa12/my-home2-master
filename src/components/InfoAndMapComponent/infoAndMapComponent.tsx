@@ -41,13 +41,12 @@ const InfoAndMapComponent: FC = () => {
                         <div className="text1">Jesse and Anna have been buying and selling homes in
                             the Vancouver area for years.
                         </div>
-                        <div className="text1">They care deeply about the Vancouver community and have lived and
+                        <div className="text1 text2">They care deeply about the Vancouver community and have lived and
                             worked in the very same neighborhoods where they buy and sell homes.</div>
                         <div className="text1">Anna works as a nurse at a local hospital, and Jesse is available on
                             your schedule to come take a look at your property. Together, they’ll work hard to
                             make sure you’re taken care of and provided with a fair cash offer for your home.
                         </div>
-                        <button className="myBtnConfigs btnWidth">Get my cash offer</button>
                     </div>
                 </div>
             </div>

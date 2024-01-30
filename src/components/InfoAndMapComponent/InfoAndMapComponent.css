@@ -17,14 +17,25 @@
     width: 50%;
     padding: 15px;
 }
-.infoAboutLocationDiv h1 {
-    font-size: 70px;
-    font-family: Inter, serif;
-}
 .mapDiv {
     width: 50%;
 }
 
 .btnWidth {
     width: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .upperDiv {
+        flex-direction: column;
+    }
+    .lowerDiv {
+        flex-direction: column;
+    }
+    .mapDiv {
+        width: 100%;
+    }
+    .infoAboutLocationDiv {
+        width: 100%;
+    }
 }
