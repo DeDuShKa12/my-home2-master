@@ -26,7 +26,7 @@ const InfoAndMapComponent: FC = () => {
                             width="100%"
                             height="400"
                             style={{border: 0}}
-                            src="https://www.google.com/maps/embed/v1/place?q=Portland"
+                            src={`https://www.google.com/maps/embed/v1/place?q=Portland&key=AIzaSyCooBeIpAa6tAr1rHHg6mNUkfQKZk6LFx4`}
                             allowFullScreen
                         ></iframe>
                     </div>
