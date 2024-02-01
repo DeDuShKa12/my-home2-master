@@ -1,0 +1,24 @@
+.videoComponentDiv {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.videoAndInfoBox {
+    width: 90%;
+    max-width: 1700px;
+    height: min-content;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #ffffff;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.8) 50%, rgba(255, 213, 0, 0.5));
+    box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgba(255, 213, 0, 0.9);
+    border: 10px solid rgba(255, 213, 0);
+    position: relative;
+}

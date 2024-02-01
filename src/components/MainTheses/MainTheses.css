@@ -3,23 +3,10 @@
     border-right: 2px solid black;
     border-left: 2px solid black;
 }
-.thesisHeader {
-    font-size: 40px;
-}
 .iconBox {
     margin: 20px;
 }
 
-@media screen and (max-width: 1700px){
-    .thesisHeader {
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 1000px){
-    .thesisHeader {
-        font-size: 20px;
-    }
-}
 @media screen and (max-width: 800px){
     .thesis {
         padding: 10px;

@@ -1,0 +1,136 @@
+.mainQuestBox {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(255, 213, 0, 0.76) 20%, rgba(0, 0, 0, 0.8));
+    box-shadow: -4px 0 18px rgba(255, 213, 0, 0.41), 4px 0 18px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: #d4e5d6;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    padding: 35px 25px;
+    margin: 40px 20px 0 20px;
+    width: 850px;
+}
+
+.emailPhoneDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.questionAnswerDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.questionAnswerDiv label {
+    margin-bottom: 5px;
+}
+.labelW {
+    width: 45%;
+}
+.labelW input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+}
+
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btnInQuest {
+    background-color: rgba(255, 213, 0, 0.9);
+    width: 40%;
+    color: #050505;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 1920px) {
+    .mainQuestBox {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    .mainQuestBox {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 1499px) {
+    .mainQuestBox {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1299px){
+    .mainQuestBox {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 836px){
+    .mainQuestBox {
+        margin: 0;
+    }
+    .questionAnswerDiv {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 20px;
+        padding: 8px 15px;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 595px){
+    .questionAnswerDiv {
+        font-size: 15px;
+    }
+    .btnInQuest {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+    .mainQuestBox {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 380px){
+    .mainQuestBox {
+        padding: 20px 10px;
+    }
+    .questionAnswerDiv {
+        font-size: 12px;
+    }
+    .btnInQuest {
+        font-size: 12px;
+        margin: 5px auto;
+    }
+}

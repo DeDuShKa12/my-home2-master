@@ -1,13 +1,3 @@
-.infoComponentDiv {
-    width: 100%;
-    margin-top: 200px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .houseDiv {
     width: 70%;
     position: absolute;
@@ -25,7 +15,7 @@
     width: 90%;
     max-width: 1700px;
     height: min-content;
-    padding: 3%;
+    padding: 96px 80px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -36,73 +26,28 @@
     border: 10px solid rgba(255, 213, 0);
     position: relative;
 }
-.infoDiv h1 {
-    font-size: 55px;
-}
 
-.subtitle {
-    font-weight: 500;
-    font-size: 40px;
-    margin-top: 20px;
-    max-width: 760px;
+.bonusesDetails {
+    margin-top: 30px;
+    font-size: 30px;
+    display: flex;
+    padding: 20px;
 }
-
-.logo {
-    margin-top: 40px;
+.questDiv {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40%;
+    justify-content: flex-end;
 }
-
-.logo img {
-    width: 30%;
-    max-width: 200px;
-    height: auto;
-    box-shadow: -4px 0 18px rgb(255, 171, 0);
-    border-radius: 20px;
-}
-
-.bonuses {
-    margin-top: 50px;
-    width: 40%;
-}
-
-.bonuses h4 {
-    width: 100%;
-    font-weight: bold;
-    font-size: 40px;
-    color: #ffab00;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.bonusesDetails {
-    font-size: 30px;
-}
-
-.myBtnConfig {
-    margin-top: 40px;
-    width: 40%;
-    height: 60px;
-    background: rgba(255, 213, 0, 0.9);
-    color: #020202;
-    font-size: 35px;
-    border: 4px solid rgb(2, 2, 2, 0.9);
-    box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgb(187, 162, 3);
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.myBtnConfig:hover {
-    background: rgba(255, 213, 0);
-    border: 4px solid rgba(112, 76, 2, 0.9);
+.questAndText {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1920px){
     .infoDiv {
-        padding: 3%;
-    }
-    .infoComponentDiv {
-        margin-top: 120px;
+        padding: 70px 55px;
     }
     .houseDiv{
         bottom: -6%;
@@ -115,203 +60,66 @@
         left: -6%;
         bottom: -10%;
     }
-    .bonusesDetails {
-        font-size: 25px;
+    .questAndText {
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width: 1399px){
-    .infoComponentDiv {
-        margin-top: 100px;
-    }
-    .infoDiv h1 {
-        font-size: 40px;
-    }
-    .bonusesDetails {
-        font-size: 20px;
-    }
-    .subtitle {
-        font-size: 30px;
-
-    }
-    .bonuses {
-        margin-top: 30px;
-    }
-
-    .bonuses h4 {
-        font-size: 25px;
-    }
-    .logo {
-        margin-top: 30px;
-    }
-    .myBtnConfig {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 1099px){
-    .infoDiv h1 {
-        font-size: 30px;
-    }
-    .subtitle {
-        margin-top: 15px;
-        font-size: 20px;
-    }
-    .bonuses {
-        margin-top: 20px;
-    }
-    .logo {
-        margin-top: 20px;
-    }
-    .myBtnConfig {
-        margin-top: 20px;
-        font-size: 25px;
-    }
-    .bonusesDetails {
-        font-size: 17px;
-    }
-    .bonuses h4 {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 799px){
-    .infoDiv h1 {
-        font-size: 25px;
-    }
-    .subtitle {
-        font-size: 15px;
-        margin-top: 0;
-    }
-    .bonuses {
-        margin-top: 10px;
-    }
-    .bonuses h4 {
-        font-size: 17px;
-    }
-    .bonusesDetails {
-        font-size: 12px;
-    }
-    .logo {
-        width: 45%;
-        margin-top: 10px;
-    }
-    .logo img {
-        width: 25%;
-        max-width: 200px;
-        border-radius: 15px;
-    }
-    .myBtnConfig {
-        width: 45%;
-        margin-top: 10px;
-        height: 45px;
-        font-size: 20px;
-    }
-    .bonuses {
-        width: 45%;
-    }
-    .houseDiv {
-        width: 60%;
-        bottom: -7%;
-    }
-}
-@media screen and (max-width: 502px){
-    .infoComponentDiv {
-        margin-top: 70px;
-        margin-bottom: 30px;
-    }
-    .subtitle {
-        margin-top: 10px;
-    }
-    .bonuses {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+@media screen and (max-width: 1299px){
+    .questAndText {
         flex-direction: column;
     }
-    .bonuses h4 {
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-    }
-    .bonusesDetails {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-    }
-    .logo {
-        width: 100%;
-    }
-    .logo img {
-        width: 15%;
-        border-radius: 10px;
-    }
-    .myBtnConfig {
-        margin-top: 10px;
-        height: 30px;
-        font-size: 15px;
+}
+
+@media screen and (max-width: 836px){
+    .houseDiv {
         width: 60%;
+        bottom: -2%;
     }
+}
+@media screen and (max-width: 699px){
     .infoDiv {
-        height: 600px;
+        padding: 50px 40px;
+    }
+}
+@media screen and (max-width: 595px){
+    .infoDiv {
+        height: 950px;
         justify-content: start;
         align-items: center;
-        padding: 2%;
+        padding: 30px 20px
     }
     .houseDiv {
         width: 90%;
         left: 5%;
         bottom: -8%;
     }
+    .questDiv {
+        order: 1;
+        margin-top: 5px;
+    }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 435px){
     .infoDiv {
-        width: 382px;
+        width: 420px;
     }
 }
 
 @media screen and (max-width: 380px){
     .infoDiv {
         width: 345px;
-        height: 500px;
-    }
-    .infoDiv h1 {
-        font-size: 21px;
-    }
-    .subtitle {
-        font-size: 13px;
-    }
-    .bonuses h4{
-        font-size: 13px;
-    }
-    .bonusesDetails {
-        font-size: 11px;
+        height: 870px;
     }
 }
 
 @media screen and (max-width: 330px){
     .infoDiv {
         width: 290px;
-        height: 420px;
+        height: 820px;
         padding: 6px;
     }
-    .infoDiv h1 {
-        font-size: 16px;
-    }
-    .subtitle {
-        font-size: 12px;
-    }
-    .bonuses h4{
-        font-size: 11px;
-    }
-    .bonusesDetails {
-        font-size: 10px;
-    }
     .houseDiv {
-        bottom: -10%;
+        bottom: -7%;
     }
 }

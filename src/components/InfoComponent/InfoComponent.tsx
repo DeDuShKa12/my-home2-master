@@ -1,32 +1,24 @@
 import React, {FC} from 'react';
+import {QuestionsComp} from "../QuestionsComp/QuestionsComp";
 import './InfoComponent.css'
+import '../styles/styles.css'
 
-interface InfoComponentProps {
-    openModal: () => void;
-}
-const InfoComponent:FC<InfoComponentProps> = ({openModal}) => {
 
+const InfoComponent:FC = () => {
     return (
-        <div className='infoComponentDiv'>
-
+        <div className='mainBgDiv'>
             <div className="infoDiv">
-                <h1>Do you want to sell your house and get rid of unnecessary problems?
-                    You've come to the right place!</h1>
-                <div className="subtitle">
-                    Answer a few questions and we will get in touch with you to help solve your issue!
-                </div>
-                <div className="logo">
-                    <img src="/logoSolo.png" alt="Logo"/>
-                </div>
-                <button onClick={openModal} type="button" className="myBtnConfig">Sell the house</button>
-                <div className="bonuses">
-                    <h4>Your bonuses when filling out the questionnaire:</h4>
-                    <div className="bonusesDetails">
-                        Free consultation and the opportunity
-                        <br/>
-                        to sell the house at a favorable price.
+                <h1 className="header1">Get Cash For Your House</h1>
+                <div className="questAndText">
+                    <div className="text1">
+                        We buy houses in Washington state as well as Oregon. Regardless of the condition of the home,
+                        neighbors, or debt, or financial status, the cash sale process is fast and easy
+                    </div>
+                    <div className="questDiv">
+                        <QuestionsComp/>
                     </div>
                 </div>
+                <button type="button" className="myBtnConfigs">How It Works</button>
                 <div className="houseDiv">
                     <img src="/pngegg22.png" alt="House"/>
                 </div>

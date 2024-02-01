@@ -57,10 +57,10 @@ const Steps: FC = () => {
                             <div className="numberDiv">Step 1</div>
                             <img src="/quest.png" alt="Logo"/>
                         </div>
-                        <h1>Fill Out A Short Questionnaire</h1>
+                        <h1>Fill Out The Form</h1>
                         <div>
-                            Provide answers to just 5 questions so that we can better understand your situation and get
-                            in touch with you.
+                            You only need to answer 5 questions to help us understand your situation
+                            and get in touch with you more effectively.
                         </div>
                     </div>
                     <div className="step">
@@ -68,10 +68,10 @@ const Steps: FC = () => {
                             <div className="numberDiv">Step 2</div>
                             <img src="/AnalysisOfferIcon.png" alt="Logo"/>
                         </div>
-                        <h1>Property Analysis & No Obligation Offer</h1>
+                        <h1>Property Analysis & Cash Offer</h1>
                         <div>
-                            We will reach out to you and offer an analysis of your options, as well as a cash offer "as
-                            is." No real estate agents needed!
+                            We'll be in touch to offer an analysis of your property and a cash offer "as is," with
+                            no real estate agents required!
                         </div>
                     </div>
                     <div className="step">
@@ -81,8 +81,8 @@ const Steps: FC = () => {
                         </div>
                         <h1>Close Deal & Cash Payment</h1>
                         <div>
-                            We offer cash for your home and can close the deal in as little as 3 days. We'll deposit
-                            $10,000 earnest money and cover all closing costs.
+                            We provide cash for your home and have the ability to close the deal in as few as 5 days.
+                            Additionally, we will deposit earnest money and take care of all closing costs.
                         </div>
                     </div>
                 </div>
