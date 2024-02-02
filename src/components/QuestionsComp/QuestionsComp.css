@@ -7,8 +7,8 @@
     color: #d4e5d6;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     padding: 35px 25px;
-    margin: 40px 20px 0 20px;
-    width: 850px;
+    margin-left: 20px;
+    width: 50%;
 }
 
 .emailPhoneDiv {
@@ -29,6 +29,7 @@
 }
 
 .questionAnswerDiv label {
+    font-size: 30px;
     margin-bottom: 5px;
 }
 .labelW {
@@ -53,6 +54,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+    z-index: 1;
 }
 
 .btnInQuest {
@@ -67,33 +69,24 @@ textarea {
     font-weight: bold;
     font-size: 25px;
     border: 2px solid black;
+    z-index: 10;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-@media screen and (max-width: 1920px) {
-    .mainQuestBox {
-        width: 750px;
-    }
-}
-
-@media screen and (max-width: 1599px) {
-    .mainQuestBox {
-        width: 650px;
-    }
-}
 
 @media screen and (max-width: 1499px) {
-    .mainQuestBox {
-        width: 600px;
+    .questionAnswerDiv label {
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width: 1299px){
+@media screen and (max-width: 1024px){
     .mainQuestBox {
         width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -104,13 +97,11 @@ button:hover {
     .questionAnswerDiv {
         font-size: 20px;
     }
-    .button {
-        font-size: 20px;
-        padding: 8px 15px;
-        margin: 10px auto;
-    }
 }
 @media screen and (max-width: 595px){
+    .questionAnswerDiv label {
+        font-size: 16px;
+    }
     .questionAnswerDiv {
         font-size: 15px;
     }

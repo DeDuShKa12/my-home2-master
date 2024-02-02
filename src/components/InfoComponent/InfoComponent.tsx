@@ -8,19 +8,22 @@ const InfoComponent:FC = () => {
     return (
         <div className='mainBgDiv'>
             <div className="infoDiv">
-                <h1 className="header1">Get Cash For Your House</h1>
                 <div className="questAndText">
-                    <div className="text1">
-                        We buy houses in Washington state as well as Oregon. Regardless of the condition of the home,
-                        neighbors, or debt, or financial status, the cash sale process is fast and easy
+                    <div className="headerTxt">
+                        <h1 className="customHeader">Get Cash For Your House</h1>
+                        <div className="customTxt">
+                            We buy houses in Washington state as well as Oregon. Regardless of the condition of the
+                            home,
+                            neighbors, or debt, or financial status, the cash sale process is fast and easy
+                        </div>
                     </div>
-                    <div className="questDiv">
-                        <QuestionsComp/>
-                    </div>
+                    <QuestionsComp/>
                 </div>
-                <button type="button" className="myBtnConfigs">How It Works</button>
+                <div className="btnDiv">
+                    <button type="button" className="myBtnConfigs">How It Works</button>
+                </div>
                 <div className="houseDiv">
-                    <img src="/pngegg22.png" alt="House"/>
+                <img src="/pngegg22.png" alt="House"/>
                 </div>
             </div>
         </div>

@@ -44,7 +44,7 @@ const QuestionsComp: FC = () => {
                     </label>
                     <textarea className="text1"{...register('additionalInfo')} />
                 </div>
-                <button className='btnInQuest' type="submit">Submit</button>
+                    <button className='btnInQuest' type="submit">Submit</button>
             </form>
         </div>
     );

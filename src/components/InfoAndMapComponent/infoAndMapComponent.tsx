@@ -33,8 +33,8 @@ const InfoAndMapComponent: FC = () => {
                 </div>
                 <div className="lowerDiv">
                     <div className="imgDiv">
-                        <img src="https://vancouverredevelopment.com/wp-content/uploads/2023/01/Jesse-Anna-Cheng.jpg"
-                             alt="IMG"/>
+                        <img src="/Man.png"
+                             alt="img"/>
                     </div>
                     <div className="infoAboutLocationDiv">
                         <h1 className="header1">Meet Jesse & Anna Cheng</h1>

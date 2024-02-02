@@ -30,7 +30,7 @@ const WhySellComponent: FC = () => {
                     <button className="myBtnConfigs">Get my cash offer</button>
                 </div>
                 <div className="imgDiv">
-                    <img src="https://vancouverredevelopment.com/wp-content/uploads/2023/01/5445-min.jpg" alt="IMG"/>
+                    <img src="/Family.png" alt="IMG"/>
                 </div>
             </div>
         </div>

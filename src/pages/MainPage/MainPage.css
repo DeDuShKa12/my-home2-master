@@ -1,6 +1,7 @@
 .MainPageBox{
     background-image: url("/public/Background.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: min-content;
     display: flex;
     align-items: center;

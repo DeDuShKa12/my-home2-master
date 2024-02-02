@@ -1,31 +1,10 @@
 .textAndInfoDiv {
     width: 60%;
-}
-
-.imgDiv {
-    width: 40%;
-    margin: 20px;
-}
-
-.imgDiv img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 40px;
-    box-shadow: 18px 18px rgba(255, 213, 0);
-    left: 0;
-    top: 0;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 800px){
     .textAndInfoDiv {
         width: 100%;
-    }
-    .imgDiv {
-        width: 90%;
-        margin: 15px 15px 15px 10px;
-    }
-    .imgDiv img{
-        box-shadow: 10px 10px rgba(255, 213, 0);
     }
 }
