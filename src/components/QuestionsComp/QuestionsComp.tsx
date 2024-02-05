@@ -11,7 +11,7 @@ interface FormData {
 }
 
 const QuestionsComp: FC = () => {
-    const { register, handleSubmit } = useForm<FormData>();
+    const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
     const onSubmit = (data: FormData) => {
         console.log('Form Data:', data);
@@ -21,30 +21,33 @@ const QuestionsComp: FC = () => {
         <div className="mainQuestBox">
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="questionAnswerDiv">
-                    <label>Your name</label>
-                    <input className="text1" {...register('name', { required: true })} />
+                    <label htmlFor="name">Your name:</label>
+                    <input id="name" className="text1" {...register('name', { required: 'This field is required' })} />
+                    {errors.name && <span className="error">{errors.name.message}</span>}
                 </div>
                 <div className="emailPhoneDiv">
                     <div className="questionAnswerDiv labelW">
-                        <label>Phone number</label>
-                        <input className="text1"{...register('phone', { required: true })} />
+                        <label htmlFor="phone">Phone number:</label>
+                        <input id="phone" className="text1"{...register('phone', { required: 'This field is required' })} />
+                        {errors.phone && <span className="error">{errors.phone.message}</span>}
                     </div>
                     <div className="questionAnswerDiv labelW">
-                        <label>Email address</label>
-                        <input className="text1"{...register('email', { pattern: /^\S+@\S+$/i })} />
+                        <label htmlFor="email">Email address:</label>
+                        <input id="email" className="text1"{...register('email', { pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' } })} />
+                        {errors.email && <span className="error">{errors.email.message}</span>}
                     </div>
                 </div>
                 <div className="questionAnswerDiv">
-                    <label>Property address</label>
-                    <input className="text1" {...register('address')} />
+                    <label htmlFor="address">Property address:</label>
+                    <input id="address" className="text1" {...register('address')} />
                 </div>
                 <div className="questionAnswerDiv">
-                    <label>
+                    <label htmlFor="additionalInfo">
                         Is there anything you want to tell us about your house or why you are selling?
                     </label>
-                    <textarea className="text1"{...register('additionalInfo')} />
+                    <textarea id="additionalInfo" className="text1"{...register('additionalInfo')} />
                 </div>
-                    <button className='btnInQuest' type="submit">Submit</button>
+                <button className='btnInQuest' type="submit">Submit</button>
             </form>
         </div>
     );

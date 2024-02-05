@@ -1,7 +1,7 @@
 .mainQuestBox {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, rgba(255, 213, 0, 0.76) 20%, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to right, rgba(203, 171, 1, 0.76) 20%, rgba(0, 0, 0, 0.8));
     box-shadow: -4px 0 18px rgba(255, 213, 0, 0.41), 4px 0 18px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     color: #d4e5d6;
@@ -14,7 +14,6 @@
 .emailPhoneDiv {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 20px;
 }
 
@@ -75,11 +74,22 @@ textarea {
 button:hover {
     background-color: #45a049;
 }
+.error {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: normal;
+    background: black;
+    border-radius: 5px;
+    padding: 0 5px;
+}
 
 
 @media screen and (max-width: 1499px) {
     .questionAnswerDiv label {
         font-size: 20px;
+    }
+    .error {
+        font-size: 16px;
     }
 }
 
@@ -87,6 +97,9 @@ button:hover {
     .mainQuestBox {
         width: 100%;
         margin-left: 0;
+    }
+    .error {
+        font-size: 15px;
     }
 }
 

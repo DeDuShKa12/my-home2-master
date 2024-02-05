@@ -2,7 +2,7 @@
     box-sizing: border-box;
     background-size: 100% auto;
     height: 320px;
-    background-image: url("/public/LastInfoBox.bmp");
+    background-image: url("https://storage.cloud.google.com/image-stor-my-home3942/LastInfoBox.bmp");
     transform: perspective(2000px);
     box-shadow: -4px 0 25px rgb(0, 0, 0),
     4px 0 25px rgba(255, 213, 0, 0.9);
@@ -62,8 +62,8 @@
 }
 
 .lastCompInfo a:hover {
-    background: #ffe758;
-    border: 2px solid rgb(77, 87, 98);
+    background-color: #45a049;
+    border: 2px solid rgba(112, 76, 2, 0.9);
 }
 
 @media screen and (max-width: 1920px) {

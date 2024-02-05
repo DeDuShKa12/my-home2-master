@@ -55,12 +55,12 @@
 
 .step:nth-child(1) .numberAndLogoDiv {
     left: -10%;
-    top: -30%;
+    top: -20%;
 }
 
 .step:nth-child(2) .numberAndLogoDiv {
     right: -10%;
-    top: -25%;
+    top: -10%;
 }
 .step:nth-child(2) {
    align-items: flex-start;
@@ -68,12 +68,12 @@
 
 .step:nth-child(3) .numberAndLogoDiv {
     left: -10%;
-    top: -25%;
+    top: -10%;
 }
 
 .numberAndLogoDiv {
     width: 50%;
-    height: min-content;
+    height: 200px;
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -100,59 +100,44 @@
 .numberAndLogoDiv img {
     width: 30%;
     max-width: 300px;
-    height: auto;
+    height: 98%;
     border-radius: 10px;
 }
 
-@media screen and (max-width: 2030px){
-    .numberAndLogoDiv {
-        width: 45%;
-    }
-    .step {
-        font-size: 35px;
-    }
-    .step:nth-child(2) .numberAndLogoDiv {
-        right: -10%;
-        top: -20%;
-    }
-}
 
-@media screen and (max-width: 1698px){
+@media screen and (max-width: 1920px){
     .step:nth-child(1) .numberAndLogoDiv {
         left: -10%;
-        top: -30%;
+        top: -15%;
     }
 
     .step:nth-child(2) .numberAndLogoDiv {
         right: -10%;
-        top: -25%;
+        top: -5%;
     }
 
     .step:nth-child(3) .numberAndLogoDiv {
         left: -10%;
-        top: -30%;
-    }
-    .step h1 {
-        font-size: 30px;
+        top: -5%;
     }
     .step {
         margin: 40px 0;
-        font-size: 25px;
     }
     .numberDiv {
         font-size: 35px;
     }
+    .numberAndLogoDiv {
+        width: 40%;
+        height: 150px;
+    }
 }
 
-@media screen and (max-width: 1300px){
-    .step {
-        font-size: 20px;
-    }
-    .step h1 {
-        font-size: 25px;
-    }
+@media screen and (max-width: 1500px){
     .numberDiv {
         font-size: 30px;
+    }
+    .numberAndLogoDiv {
+        height: 100px;
     }
 }
 
@@ -161,20 +146,18 @@
         margin-top: 40px;
     }
     .step {
-        font-size: 15px;
         padding: 2%;
-        margin: 20px 0;
+        margin: 30px 0;
     }
-    .step h1 {
-        font-size: 20px;
-        padding:0 0 10px 0;
+    .step:nth-child(2) {
+        margin-top: 5px;
     }
     .numberDiv {
         font-size: 20px;
     }
     .numberAndLogoDiv {
-        width: 35%;
-        height: 77px;
+        width: 230px;
+        height: 80px;
     }
     .step.visible {
         transform: translateX(50px);
@@ -184,77 +167,52 @@
         transform: translateX(-50px);
     }
     .step:nth-child(2) .numberAndLogoDiv {
-        right: -8%;
-        top: -10%;
+        right: -5%;
     }
     .numberDiv {
         border: 2px solid rgba(255, 213, 0, 0.7);
     }
     .step:nth-child(3) .numberAndLogoDiv {
-        top: -20%;
-        left: -8%;
+        left: -5%;
     }
     .step:nth-child(1) .numberAndLogoDiv {
-        top: -20%;
-        left: -8%;
+        left: -5%;
     }
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
     .numberAndLogoDiv {
-        width: 45%;
+        width: 40%;
+        height: 70px;
     }
 }
+
 
 @media screen and (max-width: 599px){
-    .numberAndLogoDiv {
-        width: 50%;
-    }
-    .step:nth-child(1) .numberAndLogoDiv {
-        left: -12%;
-        top: -7%;
-    }
-
-    .step:nth-child(2) .numberAndLogoDiv {
-        top: -7%;
-        right: -12%;
-    }
-
-    .step:nth-child(3) .numberAndLogoDiv {
-        left: -12%;
-        top: -7%;
-    }
-    .step.visible {
-        transform: translateX(30px);
-
-    }
-    .step.visible1 {
-        transform: translateX(-30px);
-    }
-}
-
-@media screen and (max-width: 499px){
     .steps-container {
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .step:nth-child(1) .numberAndLogoDiv {
-        left: -5%;
+        left: -3%;
+        top: -2%;
     }
 
     .step:nth-child(2) .numberAndLogoDiv {
-        right: -5%;
+        right: -3%;
+    }
+    .step:nth-child(2) {
+        margin-top: 20px;
     }
 
     .step:nth-child(3) .numberAndLogoDiv {
-        left: -5%;
+        left: -3%;
+        top: -2%;
     }
     .step {
         font-size: 13px;
         padding: 3%;
-        margin: 15px 0;
     }
     .step h1 {
-        font-size: 15px;
-        padding:0 0 10px 0;
+        font-size: 27px;
     }
     .numberDiv {
         width: 80%;
@@ -264,33 +222,33 @@
         left: 9%;
     }
     .numberAndLogoDiv {
-        width: 30%;
-        height: 77px;
+        width: 110px;
+        height: 90px;
         flex-direction: column;
         justify-content: center;
         padding-top: 5px;
     }
     .numberAndLogoDiv img {
         width: 50%;
-        height: 50px;
+        height: 60px;
     }
 }
 
 @media screen and (max-width: 399px){
     .numberAndLogoDiv {
-        width: 40%;
-        height: 60px;
+        width: 100px;
+        height: 75px;
     }
     .numberAndLogoDiv img {
-        width: 37%;
-        height: 40px;
+        width: 50%;
+        height: 60px;
     }
     .step {
-        font-size: 12px;
         padding: 4%;
+        margin: 20px 0;
     }
     .step h1 {
-        font-size: 12px;
+        font-size: 25px;
         padding:0 0 5px 0;
     }
     .numberDiv {
@@ -299,5 +257,12 @@
     }
     .headerDiv {
         padding: 5px 10px;
+    }
+    .step.visible {
+        transform: translateX(40px);
+
+    }
+    .step.visible1 {
+        transform: translateX(-40px);
     }
 }

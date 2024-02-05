@@ -1,24 +1,40 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import '../styles/styles.css'
 import './InfoAndMapComponent.css'
+import Cookies from "universal-cookie";
 
 const InfoAndMapComponent: FC = () => {
+    useEffect(() => {
+        const cookies = new Cookies();
+        cookies.set('cookieName', 'cookieValue', { sameSite: 'none', secure: true });
+    }, []);
+    const handleScrollToQuest = () => {
+        const stepsElement = document.getElementById('quest');
+        if (stepsElement) {
+            const offset = -50;
+            const elementPosition = stepsElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset + offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
     return (
         <div className="mainBgDiv">
             <div className="mainBox generalBox">
                 <div className="upperDiv">
                     <div className="infoAboutLocationDiv">
-                        <h1 className="header1">We Buy Houses in the Entire PORTLAND Metro Area</h1>
+                        <h1 className="header1">We Buy Real Estate In WASHINGTON And OREGON.</h1>
                         <div className="text1">We’re interested in buying properties located throughout the
                             Vancouver metropolitan area.
                         </div>
                         <div className="text1 text2">We have bought and sold homes in…</div>
                         <div className="text1">Portland, Tigard, Beaverton, Gresham, Hillsboro, Wilsonville, Canby,
-                            Woodburn, Sandy, Aloha, Troutdale, Molalla, Oregon City, Vancouver, Ridgefield, Washougal,
-                            Battle Ground, Camas, Salmon Creek, Woodland, Kelso, Longview, Clark County, Cowlitz County,
-                            Many more cities!
+                            Clark County, Columbia County, Cowlitz County, Multnomah County, Skamania County,
+                            and Wahkiakum County.
                         </div>
-                        <button className="myBtnConfigs btnWidth">Get my cash offer</button>
+                        <button onClick={handleScrollToQuest} className="myBtnConfigs btnWidth">Get my cash offer</button>
                     </div>
                     <div className="mapDiv">
                         <iframe
@@ -33,7 +49,7 @@ const InfoAndMapComponent: FC = () => {
                 </div>
                 <div className="lowerDiv">
                     <div className="imgDiv">
-                        <img src="/Man.png"
+                        <img src="https://storage.cloud.google.com/image-stor-my-home3942/Man.png"
                              alt="img"/>
                     </div>
                     <div className="infoAboutLocationDiv">

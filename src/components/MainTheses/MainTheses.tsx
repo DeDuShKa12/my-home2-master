@@ -36,7 +36,7 @@ const MainTheses:FC = () => {
                     </div>
                 </div>
                 <div className="thesis">
-                    <div className="imgDiv">
+                    <div className="iconBox">
                         <FontAwesomeIcon icon={faBuildingShield} size="3x" style={{color: "#FFD43B",}} />
                     </div>
                     <h1 className="header2">Guarantee With No Risk Involved.</h1>

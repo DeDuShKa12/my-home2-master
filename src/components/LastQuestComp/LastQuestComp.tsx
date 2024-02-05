@@ -5,7 +5,7 @@ import {QuestionsComp} from "../QuestionsComp/QuestionsComp";
 
 const LastQuestComp: FC = () => {
     return (
-        <div className='mainBgDiv'>
+        <div id="quest" className='mainBgDiv'>
             <div className='mainBox'>
                 <div className="aboutComp">
                     <div className="contactsDiv">

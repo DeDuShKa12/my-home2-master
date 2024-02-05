@@ -3,34 +3,39 @@ import './WhySellComponent.css'
 import '../styles/styles.css'
 
 const WhySellComponent: FC = () => {
+    const handleScrollToQuest = () => {
+        const stepsElement = document.getElementById('quest');
+        if (stepsElement) {
+            const offset = -50;
+            const elementPosition = stepsElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset + offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
     return (
-        <div className="mainBgDiv">
+        <div id="learnMore" className="mainBgDiv">
             <div className="mainBox">
                 <div className="textAndInfoDiv">
-                    <h1 className="header1">Why Sell Your Home for Cash?</h1>
-                    <div className="text1">The traditional home selling process is long and arduous. Not only must you
-                        acquire a real estate agent, prepare your home for sale, and negotiate with needy potential
-                        buyers, but deal with closing processes and inspections, which can take weeks.</div>
-                    <div className="text1 text2">When you sell your home for cash, the process can take as little as 3 days.
-                        No real estate agent. No repairs. No flakey homebuyers. Just cash in your pocket and your
-                        home sold.</div>
-                    <div className="text1">House for cash deals are perfect when experiencing…</div>
-                    <div>
-                        <ul>
-                            <li className="text1">Divorce</li>
-                            <li className="text1">Short sales</li>
-                            <li className="text1">Foreclosures</li>
-                            <li className="text1">Job relocation</li>
-                            <li className="text1">Damaged home</li>
-                            <li className="text1">Inherited home</li>
-                            <li className="text1">Death in the family</li>
-                            <li className="text1">Anything that would make you want to sell your home as-is</li>
-                        </ul>
-                    </div>
-                    <button className="myBtnConfigs">Get my cash offer</button>
+                    <h1 className="header1">Why Is This The Best Way To Sell For You?</h1>
+                    <div className="text1">Selling a home the traditional way can be a time-consuming and laborious
+                        process. From finding a real estate agent to preparing your home for sale, dealing with
+                        potential buyers, and navigating through the closing processes and inspections, the entire
+                        ordeal can drag on for weeks.</div>
+                    <div className="text1 text2">However, when you opt to sell your home for cash, the entire process
+                        can be completed in as little as 3 days, without the need for a real estate agent, repairs,
+                        or dealing with indecisive homebuyers. Instead, you receive cash for your property, and your
+                        home is sold.</div>
+                    <div className="text1">Cash deals for houses are particularly beneficial in situations such as
+                        divorce, short sales, foreclosures, job relocation, when you have a damaged or inherited home,
+                        or are dealing with the loss of a family member—essentially, in any circumstance that would
+                        lead you to sell your home as it is.</div>
+                    <button onClick={handleScrollToQuest} className="myBtnConfigs">Get my cash offer</button>
                 </div>
                 <div className="imgDiv">
-                    <img src="/Family.png" alt="IMG"/>
+                    <img src="https://storage.cloud.google.com/image-stor-my-home3942/Family.png" alt="IMG"/>
                 </div>
             </div>
         </div>

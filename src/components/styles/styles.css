@@ -1,3 +1,4 @@
+
 .mainBgDiv {
     width: 100%;
     margin-top: 120px;
@@ -24,7 +25,7 @@
     font-family: Inter, serif;
 }
 .header2 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .text1 {
@@ -41,12 +42,12 @@
     height: 70px;
     background: rgba(255, 213, 0, 0.9);
     color: #020202;
-    font-size: 35px;
+    font-size: 30px;
     border: 4px solid rgb(2, 2, 2, 0.9);
     box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgb(187, 162, 3);
     border-radius: 10px;
     font-weight: bold;
-    z-index: 10;
+    z-index: 9;
 }
 
 .myBtnConfigs:hover {
@@ -71,13 +72,13 @@
         font-size: 60px;
     }
     .header2 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .text1 {
         font-size: 20px;
     }
     .myBtnConfigs {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 1500px){
@@ -88,8 +89,9 @@
         font-size: 18px;
     }
     .myBtnConfigs {
-        font-size: 25px;
+        font-size: 20px;
         height: 50px;
+        width: 42%;
     }
 }
 
@@ -98,7 +100,7 @@
         font-size: 40px;
     }
     .header2 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .text1 {
         font-size: 18px;
@@ -133,7 +135,12 @@
         width: 100%;
         padding-top: 20px;
     }
+}
 
+@media screen and (max-width: 550px){
+    .myBtnConfigs {
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 435px){
     .mainBox {

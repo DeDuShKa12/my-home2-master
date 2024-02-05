@@ -5,6 +5,18 @@ import { faFacebookF, faInstagram, faTwitterSquare } from '@fortawesome/free-bra
 import {ModalPhoneEmail} from "../ModalPhoneEmail/ModalPhoneEmail";
 
 const Header: FC = () => {
+    const handleScrollToMain = () => {
+        const stepsElement = document.getElementById('main');
+        if (stepsElement) {
+            const offset = -50;
+            const elementPosition = stepsElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset + offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 500);
 
@@ -42,7 +54,7 @@ const Header: FC = () => {
     return (
         <div className="mainBoxHeader">
             <div className="logoHeader">
-                <img src="/logo.png" alt="Not House Recovery"/>
+                <img onClick={handleScrollToMain} src="https://storage.cloud.google.com/image-stor-my-home3942/logo.png" alt="Not House Recovery"/>
             </div>
             <div className='buttonBoxInHeader'>
                 <button type="button" className="myBtnInHeader btn btn-warning" onClick={handleInstagramClick}>

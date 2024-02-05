@@ -5,8 +5,32 @@ import '../styles/styles.css'
 
 
 const InfoComponent:FC = () => {
+    const handleScrollToSteps = () => {
+        const stepsElement = document.getElementById('steps');
+        if (stepsElement) {
+            const offset = -50;
+            const elementPosition = stepsElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset + offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+    const handleScrollToLearnMore = () => {
+        const stepsElement = document.getElementById('learnMore');
+        if (stepsElement) {
+            const offset = -50;
+            const elementPosition = stepsElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset + offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
     return (
-        <div className='mainBgDiv'>
+        <div id="main" className='mainBgDiv'>
             <div className="infoDiv">
                 <div className="questAndText">
                     <div className="headerTxt">
@@ -20,10 +44,11 @@ const InfoComponent:FC = () => {
                     <QuestionsComp/>
                 </div>
                 <div className="btnDiv">
-                    <button type="button" className="myBtnConfigs">How It Works</button>
+                    <button type="button" className="myBtnConfigs customBTN" onClick={handleScrollToSteps}>How It Works</button>
+                    <button type="button" className="myBtnConfigs customBTN" onClick={handleScrollToLearnMore}>Learn More</button>
                 </div>
                 <div className="houseDiv">
-                <img src="/pngegg22.png" alt="House"/>
+                <img src="https://storage.cloud.google.com/image-stor-my-home3942/pngegg22.png" alt="House"/>
                 </div>
             </div>
         </div>
