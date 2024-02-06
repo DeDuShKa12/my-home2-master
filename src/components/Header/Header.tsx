@@ -54,7 +54,7 @@ const Header: FC = () => {
     return (
         <div className="mainBoxHeader">
             <div className="logoHeader">
-                <img onClick={handleScrollToMain} src="https://storage.cloud.google.com/image-stor-my-home3942/logo.png" alt="Not House Recovery"/>
+                <img onClick={handleScrollToMain} src="https://storage.googleapis.com/image-stor-my-home3942/logo.png" alt="Not House Recovery"/>
             </div>
             <div className='buttonBoxInHeader'>
                 <button type="button" className="myBtnInHeader btn btn-warning" onClick={handleInstagramClick}>

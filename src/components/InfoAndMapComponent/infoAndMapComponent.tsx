@@ -49,7 +49,7 @@ const InfoAndMapComponent: FC = () => {
                 </div>
                 <div className="lowerDiv">
                     <div className="imgDiv">
-                        <img src="https://storage.cloud.google.com/image-stor-my-home3942/Man.png"
+                        <img src="https://storage.googleapis.com/image-stor-my-home3942/Man.png"
                              alt="img"/>
                     </div>
                     <div className="infoAboutLocationDiv">

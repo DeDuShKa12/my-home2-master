@@ -35,7 +35,7 @@ const WhySellComponent: FC = () => {
                     <button onClick={handleScrollToQuest} className="myBtnConfigs">Get my cash offer</button>
                 </div>
                 <div className="imgDiv">
-                    <img src="https://storage.cloud.google.com/image-stor-my-home3942/Family.png" alt="IMG"/>
+                    <img src="https://storage.googleapis.com/image-stor-my-home3942/Family.png" alt="IMG"/>
                 </div>
             </div>
         </div>

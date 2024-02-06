@@ -2,7 +2,7 @@
     box-sizing: border-box;
     background-size: 100% auto;
     height: 320px;
-    background-image: url("https://storage.cloud.google.com/image-stor-my-home3942/LastInfoBox.bmp");
+    background-image: url("https://storage.googleapis.com/image-stor-my-home3942/LastInfoBox.bmp");
     transform: perspective(2000px);
     box-shadow: -4px 0 25px rgb(0, 0, 0),
     4px 0 25px rgba(255, 213, 0, 0.9);
