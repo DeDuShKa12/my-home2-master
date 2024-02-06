@@ -48,7 +48,7 @@ const InfoComponent:FC = () => {
                     <button type="button" className="myBtnConfigs customBTN" onClick={handleScrollToLearnMore}>Learn More</button>
                 </div>
                 <div className="houseDiv">
-                <img src="https://drive.google.com/uc?id=18uqX4rFJVF5afnlMq7xlz5Zw-F6-Bsut" alt="House"/>
+                <img src="https://storage.cloud.google.com/image-stor-my-home3942/pngegg22.png" alt="House"/>
                 </div>
             </div>
         </div>
