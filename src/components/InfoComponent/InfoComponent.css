@@ -115,16 +115,18 @@
         column-gap: 10px;
     }
 }
-
-@media screen and (max-width: 713px){
-
-    .customBTN {
-        width: 28%;
+@media screen and (max-width: 750px){
+    .infoDiv {
+        height: 1250px;
+    }
+    .btnDiv {
+        width: 100%;
     }
 }
+
 @media screen and (max-width: 595px){
     .infoDiv {
-        height: 1140px;
+        height: 1220px;
         justify-content: start;
         align-items: center;
         padding: 30px 20px
@@ -150,7 +152,7 @@
 @media screen and (max-width: 435px){
     .infoDiv {
         width: 420px;
-        height: 1100px;
+        height: 1170px;
     }
     .houseDiv {
         bottom: -5%;
@@ -166,7 +168,7 @@
 @media screen and (max-width: 380px){
     .infoDiv {
         width: 345px;
-        height: 1050px;
+        height: 1120px;
         padding: 20px 10px
     }
     .customBTN {
@@ -177,7 +179,6 @@
 @media screen and (max-width: 330px){
     .infoDiv {
         width: 290px;
-        height: 1030px;
         padding: 6px;
     }
 }

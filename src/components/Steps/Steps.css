@@ -147,10 +147,7 @@
     }
     .step {
         padding: 2%;
-        margin: 30px 0;
-    }
-    .step:nth-child(2) {
-        margin-top: 5px;
+        margin: 20px 0;
     }
     .numberDiv {
         font-size: 20px;
@@ -199,9 +196,6 @@
     .step:nth-child(2) .numberAndLogoDiv {
         right: -3%;
     }
-    .step:nth-child(2) {
-        margin-top: 20px;
-    }
 
     .step:nth-child(3) .numberAndLogoDiv {
         left: -3%;
@@ -210,6 +204,7 @@
     .step {
         font-size: 13px;
         padding: 3%;
+        margin: 15px;
     }
     .step h1 {
         font-size: 27px;

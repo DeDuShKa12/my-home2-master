@@ -33,7 +33,7 @@ const LastInfoBox: FC = () => {
             </div>
             <div className="lastCompInfo">
                 <a href="mailto:webuyanyhousesforcash@gmail.com">webuyanyhousesforcash@gmail.com</a>
-                <a href="tel:+380962322323">+380 96 2322 323</a>
+                <a href="tel:+13607183727">+1(360) 718 37 27</a>
             </div>
         </div>
     );
