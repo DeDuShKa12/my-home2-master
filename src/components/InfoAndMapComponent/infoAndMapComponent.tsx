@@ -29,7 +29,7 @@ const InfoAndMapComponent: FC = () => {
                         <div className="text1">We’re interested in buying properties located throughout the
                             Vancouver metropolitan area.
                         </div>
-                        <div className="text1 text2">We have bought and sold homes in…</div>
+                        <div className="text1 text2">We have bought homes in…</div>
                         <div className="text1">Portland, Tigard, Beaverton, Gresham, Hillsboro, Wilsonville, Canby,
                             Clark County, Columbia County, Cowlitz County, Multnomah County, Skamania County,
                             and Wahkiakum County.
@@ -53,15 +53,13 @@ const InfoAndMapComponent: FC = () => {
                              alt="img"/>
                     </div>
                     <div className="infoAboutLocationDiv">
-                        <h1 className="header1">Meet Jesse & Anna Cheng</h1>
-                        <div className="text1">Jesse and Anna have been buying and selling homes in
-                            the Vancouver area for years.
+                        <h1 className="header1">Meeting With Our Agent</h1>
+                        <div className="text1">We look forward to meeting with our agent at your earliest convenience.
                         </div>
-                        <div className="text1 text2">They care deeply about the Vancouver community and have lived and
-                            worked in the very same neighborhoods where they buy and sell homes.</div>
-                        <div className="text1">Anna works as a nurse at a local hospital, and Jesse is available on
-                            your schedule to come take a look at your property. Together, they’ll work hard to
-                            make sure you’re taken care of and provided with a fair cash offer for your home.
+                        <div className="text1 text2">Simply fill out the form, and we will handle the rest.</div>
+                        <div className="text1"> Rest assured, your personal information is strictly confidential.
+                            Our primary objective is to assist you in positively transforming your life, and we are
+                            always here to support you
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import './LastInfoBox.css';
 
 const LastInfoBox: FC = () => {
     const handleInstagramClick = () => {
-        window.open('https://www.instagram.com/', '_blank');
+        window.open('https://www.instagram.com/n_h_recovery/', '_blank');
     };
 
     const handleFacebookClick = () => {

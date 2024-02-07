@@ -21,7 +21,7 @@ const Header: FC = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 500);
 
     const handleInstagramClick = () => {
-        window.open('https://www.instagram.com/', '_blank');
+        window.open('https://www.instagram.com/n_h_recovery/', '_blank');
     };
 
     const handleFacebookClick = () => {

@@ -40,7 +40,7 @@ const Steps: FC = () => {
                     <div className="step">
                         <div className="numberAndLogoDiv">
                             <div className="numberDiv">Step 1</div>
-                            <img src="https://storage.cloud.google.com/image-stor-my-home3942/quest.png" alt="Logo"/>
+                            <img src="https://storage.googleapis.com/image-stor-my-home3942/quest.png" alt="Logo"/>
                         </div>
                         <h1 className="header1">Fill Out The Form</h1>
                         <div className="header2">
