@@ -15,7 +15,7 @@ const LastQuestComp: FC = () => {
                         <p className="text1">
                             Contact Us Today
                         </p>
-                        <a className="header1 text2" href="tel:+13607183727">+1(360) 718 37 27</a>
+                        <a className="header1 text2" href="tel:+15032266340">+1 (503) 226-6340</a>
                     </div>
                     <QuestionsComp/>
                 </div>
