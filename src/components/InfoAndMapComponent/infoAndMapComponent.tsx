@@ -1,13 +1,9 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import '../styles/styles.css'
 import './InfoAndMapComponent.css'
-import Cookies from "universal-cookie";
 
 const InfoAndMapComponent: FC = () => {
-    useEffect(() => {
-        const cookies = new Cookies();
-        cookies.set('cookieName', 'cookieValue', { sameSite: 'none', secure: true });
-    }, []);
+
     const handleScrollToQuest = () => {
         const stepsElement = document.getElementById('quest');
         if (stepsElement) {
