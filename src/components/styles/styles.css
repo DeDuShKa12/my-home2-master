@@ -38,8 +38,7 @@
 
 .myBtnConfigs {
     margin-top: 40px;
-    width: 40%;
-    height: 70px;
+    padding: 10px 20px;
     background: rgba(255, 213, 0, 0.9);
     color: #020202;
     font-size: 30px;
@@ -90,8 +89,7 @@
     }
     .myBtnConfigs {
         font-size: 20px;
-        height: 50px;
-        width: 42%;
+        padding: 5px 10px;
     }
 }
 
@@ -107,7 +105,7 @@
         margin-top: 10px;
     }
     .myBtnConfigs {
-        font-size: 15px;
+        font-size: 18px;
         margin-top: 20px;
     }
 }
@@ -128,20 +126,12 @@
     .text2 {
         margin: 10px 0 10px 0;
     }
-    .myBtnConfigs {
-        width: 50%;
-    }
     .imgDiv {
         width: 100%;
         padding-top: 20px;
     }
 }
 
-@media screen and (max-width: 550px){
-    .myBtnConfigs {
-        font-size: 13px;
-    }
-}
 @media screen and (max-width: 435px){
     .mainBox {
         width: 420px;
@@ -152,10 +142,16 @@
     .mainBox {
         width: 345px;
     }
+    .myBtnConfigs {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 330px){
     .mainBox {
         padding: 6px;
+    }
+    .myBtnConfigs {
+        font-size: 14px;
     }
 }

@@ -75,7 +75,7 @@ const Header: FC = () => {
                 ) : (
                     <>
                         <a href="mailto:webuyanyhousesforcash@gmail.com">webuyanyhousesforcash@gmail.com</a>
-                        <a href="tel:+13607183727">+1(360) 718 37 27</a>
+                        <a href="tel:+15032266340">+1 (503) 226-6340</a>
                     </>
                 )}
             </div>

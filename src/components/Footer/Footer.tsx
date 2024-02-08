@@ -4,9 +4,9 @@ import {faFacebookF, faInstagram, faTwitterSquare} from '@fortawesome/free-brand
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import './LastInfoBox.css';
+import './Footer.css';
 
-const LastInfoBox: FC = () => {
+const Footer: FC = () => {
     const handleInstagramClick = () => {
         window.open('https://www.instagram.com/n_h_recovery/', '_blank');
     };
@@ -33,10 +33,10 @@ const LastInfoBox: FC = () => {
             </div>
             <div className="lastCompInfo">
                 <a href="mailto:webuyanyhousesforcash@gmail.com">webuyanyhousesforcash@gmail.com</a>
-                <a href="tel:+13607183727">+1(360) 718 37 27</a>
+                <a href="tel:+15032266340">+1 (503) 226-6340</a>
             </div>
         </div>
     );
 };
 
-export {LastInfoBox};
+export {Footer};

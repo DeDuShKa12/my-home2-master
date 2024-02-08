@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
-import { useForm } from 'react-hook-form';
+import React, {FC, useRef} from 'react';
+import {useForm} from 'react-hook-form';
+import emailjs from 'emailjs-com';
 import './QuestionsComp.css';
 
 interface FormData {
@@ -11,15 +12,30 @@ interface FormData {
 }
 
 const QuestionsComp: FC = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+    const form = useRef<HTMLFormElement>(null);
+    const { register,
+        handleSubmit,
+        formState: { errors }, reset } = useForm<FormData>();
 
-    const onSubmit = (data: FormData) => {
-        console.log('Form Data:', data);
+    const sendEmail = async () => {
+        try {
+            if (!form.current) {
+                console.error('Form element is not available');
+                return;
+            }
+
+             await emailjs
+                .sendForm('service_48b9qsi', 'template_zcwl55k', form.current, 'mE7q44hn29T0TTVE2');
+            reset();
+        } catch (error) {
+            console.error('Email sending failed:', error);
+        }
     };
+
 
     return (
         <div className="mainQuestBox">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                 <div className="questionAnswerDiv">
                     <label htmlFor="name">Your name:</label>
                     <input id="name" className="text1" {...register('name', { required: 'This field is required' })} />

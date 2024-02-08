@@ -38,14 +38,14 @@ const InfoComponent:FC = () => {
                         <div className="customTxt">
                             We buy houses in Washington state as well as Oregon. Regardless of the condition of the
                             home,
-                            neighbors, or debt, or financial status, the cash sale process is fast and easy
+                            neighbors, debt, financial status, the cash sale process is fast and easy
                         </div>
                     </div>
                     <QuestionsComp/>
                 </div>
                 <div className="btnDiv">
-                    <button type="button" className="myBtnConfigs customBTN" onClick={handleScrollToSteps}>How It Works</button>
-                    <button type="button" className="myBtnConfigs customBTN" onClick={handleScrollToLearnMore}>Learn More</button>
+                    <button type="button" className="myBtnConfigs" onClick={handleScrollToSteps}>How It Works</button>
+                    <button type="button" className="myBtnConfigs" onClick={handleScrollToLearnMore}>Learn More</button>
                 </div>
                 <div className="houseDiv">
                 <img src="https://storage.googleapis.com/image-stor-my-home3942/pngegg22.png" alt="House"/>
