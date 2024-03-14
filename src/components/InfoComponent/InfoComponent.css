@@ -21,9 +21,9 @@
     justify-content: flex-start;
     align-items: center;
     color: #ffffff;
-    background: linear-gradient(to right, rgb(0, 0, 0, 0.8) 50%, rgba(255, 213, 0, 0.5));
-    box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgba(255, 213, 0, 0.9);
-    border: 10px solid rgba(255, 213, 0);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.90) 30%, rgba(54, 145, 134, 0.70));
+    box-shadow: -4px 0 18px rgb(0, 0, 0), 4px 0 18px rgba(49, 140, 126, 0.9);
+    border: 10px solid rgb(35, 108, 124);
     position: relative;
 }
 .questDiv {

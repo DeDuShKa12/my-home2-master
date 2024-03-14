@@ -5,10 +5,18 @@
 }
 
 .headerDiv {
-    background: black;
-    box-shadow: -1px 0 8px rgb(255, 171, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 10px 20px;
-    border-radius: 10px;
+    color: #f1dab4;
+    font-size: 172px;
+    text-shadow: 1px 1px #423e3c,
+    2px 2px #423e3c,
+    3px 3px #423e3c;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #236c7b, #010203) 30;
 }
 
 .steps-container {
@@ -44,13 +52,13 @@
 .step.visible {
     opacity: 1;
     transform: translateX(100px);
-    background: #020202;
+    background: rgba(37, 109, 115, 0.9);
     color: wheat;
 }
 .step.visible1 {
     opacity: 1;
     transform: translate(-100px);
-    background: rgba(255, 213, 0, 0.9);
+    background: rgba(37, 109, 115, 0.9);
 }
 
 .step:nth-child(1) .numberAndLogoDiv {

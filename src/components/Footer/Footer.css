@@ -2,15 +2,18 @@
     box-sizing: border-box;
     background-size: 100% auto;
     height: 320px;
-    background-image: url("https://storage.googleapis.com/image-stor-my-home3942/LastInfoBox.bmp");
+    /*background: hsl(189, 72%, 14%) radial-gradient( hsl(180, 25%, 3%), hsl(189, 72%, 14%));*/
+    /*background: hsl(180, 25%, 3%) radial-gradient( hsl(189, 73%, 25%), hsl(180, 25%, 3%));*/
+    background: linear-gradient(0deg, black, rgba(1, 85, 94, 0.98), black);
     transform: perspective(2000px);
     box-shadow: -4px 0 25px rgb(0, 0, 0),
-    4px 0 25px rgba(255, 213, 0, 0.9);
+    4px 0 25px rgba(14, 13, 9, 0.9);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
     padding: 25px;
+    border-top: 2px solid black;
 }
 
 .buttonBox {
@@ -28,7 +31,7 @@
     margin: 10px;
     border: 2px solid rgba(246, 246, 246, 0.6);
     border-radius: 20px;
-    box-shadow: 0 0 8px rgba(255, 213, 0, 0.6);
+    box-shadow: 0 0 8px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;

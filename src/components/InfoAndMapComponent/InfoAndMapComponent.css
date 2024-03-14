@@ -4,7 +4,9 @@
 .upperDiv {
     display: flex;
     justify-content: space-around;
-    border-bottom: 10px solid black;
+    border-bottom: 6px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #236c7b, #010203) 1;
     padding-bottom: 30px;
 }
 .lowerDiv {

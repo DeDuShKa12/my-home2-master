@@ -1,7 +1,5 @@
 .MainPageBox{
-    background-image: url("https://storage.googleapis.com/image-stor-my-home3942/Background.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background: hsl(180, 25%, 3%) radial-gradient( hsl(189, 79%, 11%), hsl(180, 25%, 3%));
     height: min-content;
     display: flex;
     align-items: center;
