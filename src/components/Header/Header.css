@@ -4,7 +4,7 @@
     background-size: 100%;
     color: #020202;
     width: 100%;
-    height: 90px;
+    height: 150px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -14,14 +14,15 @@
 
 .logoHeader {
     width: 33%;
-    height: 80%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 5%;
 }
 
 .logoHeader img{
-    width: 300px;
+    width: 400px;
     height: 100%;
     cursor: pointer;
 }
@@ -50,13 +51,13 @@
 }
 
 .compInfo {
-    width: 33%;
+    width: 34%;
     height: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-end;
     flex-direction: column;
-    padding-right: 20px;
+    padding-right: 5%;
 }
 
 .compInfo a {
@@ -80,12 +81,14 @@
 }
 
 .btn-show-modal {
+    width: 50%;
     cursor: pointer;
     font-size: 20px;
     background: rgba(255, 213, 0, 0.9);
     border: 2px solid black;
     border-radius: 10px;
     padding: 2px;
+    font-weight: bold;
 }
 .btn-show-modal:hover {
     background-color: #45a049;
@@ -94,24 +97,27 @@
 
 @media screen and (max-width: 2150px) {
     .compInfo a {
-        width: 80%;
+        width: 90%;
         font-size: 20px;
     }
+    .mainBoxHeader {
+        height: 120px;
+    }
     .logoHeader img{
-        width: 250px;
+        width: 350px;
     }
 }
 
 @media screen and (max-width: 1440px) {
     .compInfo a {
-        width: 95%;
+        width: 100%;
         font-size: 16px;
     }
     .mainBoxHeader {
-        height: 80px;
+        height: 100px;
     }
     .logoHeader img{
-        width: 200px;
+        width: 300px;
     }
     .icon {
         font-size: 30px;
@@ -125,17 +131,21 @@
         border: 1px solid black;;
     }
     .mainBoxHeader {
-        height: 60px;
+        height: 90px;
     }
     .icon {
         font-size: 20px;
     }
     .logoHeader img{
-        width: 150px;
+        width: 250px;
     }
 }
 
 @media screen and (max-width: 799px) {
+    .logoHeader img{
+        width: 200px;
+        height: 90%;
+    }
     .compInfo a {
         width: 120%;
         font-size: 12px;
@@ -147,18 +157,25 @@
         font-size: 15px;
     }
     .compInfo {
-        padding-right: 10px;
         display: flex;
         justify-content: center;
     }
+    .mainBoxHeader {
+        height: 80px;
+    }
+    .logoHeader {
+        padding-left: 1%;
+    }
 }
 @media screen and (max-width: 599px) {
+    .mainBoxHeader {
+        height: 70px;
+    }
     .compInfo a {
         font-size: 9px;
     }
     .compInfo {
         justify-content: space-around;
-        padding-right: 5px;
     }
     .icon {
         font-size: 10px;
@@ -167,14 +184,21 @@
         margin: 2px;
     }
     .logoHeader img{
-        width: 120px;
-        height: 85%;
+        width: 140px;
+        height: 80%;
+    }
+    .btn-show-modal {
+        width: 75%;
     }
 }
 
 @media screen and (max-width: 410px) {
     .logoHeader img{
         width: 100px;
-        height: 69%;
+        height: 60%;
     }
+    .btn-show-modal {
+        font-size: 15px;
+    }
+
 }

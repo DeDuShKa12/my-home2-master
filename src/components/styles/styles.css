@@ -1,7 +1,7 @@
 
 .mainBgDiv {
     width: 100%;
-    margin-top: 120px;
+    margin-top: 155px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,11 @@
     left: 0;
     top: 0;
 }
-
+@media screen and (max-width: 2150px) {
+    .mainBgDiv {
+        margin-top: 130px;
+    }
+}
 @media screen and (max-width: 1700px){
     .header1 {
         font-size: 60px;
@@ -92,6 +96,11 @@
         padding: 5px 10px;
     }
 }
+@media screen and (max-width: 1440px) {
+    .mainBgDiv {
+        margin-top: 110px;
+    }
+}
 
 @media screen and (max-width: 1024px){
     .header1 {
@@ -109,10 +118,12 @@
         margin-top: 20px;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 999px) {
     .mainBgDiv {
-        margin-top: 80px;
+        margin-top: 95px;
     }
+}
+@media screen and (max-width: 800px){
     .mainBox {
         flex-direction: column;
     }
@@ -131,7 +142,11 @@
         padding-top: 20px;
     }
 }
-
+@media screen and (max-width: 599px){
+    .mainBgDiv {
+        margin-top: 75px;
+    }
+}
 @media screen and (max-width: 435px){
     .mainBox {
         width: 420px;
