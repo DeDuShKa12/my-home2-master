@@ -143,9 +143,9 @@
     }
 }
 @media screen and (max-width: 599px){
-    .mainBgDiv {
-        margin-top: 75px;
-    }
+    /*.mainBgDiv {*/
+    /*    margin-top: 75px;*/
+    /*}*/
 }
 @media screen and (max-width: 435px){
     .mainBox {
